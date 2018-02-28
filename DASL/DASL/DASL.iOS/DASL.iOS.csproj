@@ -146,9 +146,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <InterfaceDefinition Include="LaunchScreen.storyboard" />
-  </ItemGroup>
-  <ItemGroup>
+    <InterfaceDefinition Include="EmptyXib1.xib" />
+    <InterfaceDefinition Include="HomeScreen.storyboard" />
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
