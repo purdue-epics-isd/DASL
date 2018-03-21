@@ -2,18 +2,27 @@
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using SQLite;
+using System.IO
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace DASL
 {
 	public partial class App : Application
-	{
+	{ //path string for database
+        string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal),"dbTest.db3") 
         public App()
 		{
 			InitializeComponent();
 
 			SetMainPage();
+
+            var db = new SQLiteConnection(dbPath);
+
+            db.CreateTable<Word>();
+
 		}
+
 
 		public static void SetMainPage()
 		{
