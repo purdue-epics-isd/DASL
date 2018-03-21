@@ -18,7 +18,12 @@ namespace DASL
 
         public override string ToString()
         {
-            return string.Format("[Word: Name = {0}, Part of Speech: Speech = {1}", Name, Speech);
+            return Name + " " + Speech + " " + Sentence + " " + Category;
+        }
+
+        public Word()
+        {
+
         }
     }
 }
