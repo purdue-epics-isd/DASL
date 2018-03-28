@@ -21,9 +21,17 @@ namespace DASL
             return Name + " " + Speech + " " + Sentence + " " + Category;
         }
 
+        public Word(string name, string speech, string sentence, string category)
+        {
+            Name = name;
+            Speech = speech;
+            Sentence = sentence;
+            Category = category;
+        }
+
         public Word()
         {
-
+            
         }
     }
 }
