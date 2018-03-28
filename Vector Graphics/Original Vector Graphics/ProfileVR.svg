@@ -15,7 +15,7 @@
    version="1.1"
    id="svg3880"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="ProfileOP.svg">
+   sodipodi:docname="ProfileVR.svg">
   <defs
      id="defs3874">
     <inkscape:perspective
@@ -44,7 +44,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="-1247.0281"
+     inkscape:cx="-1618.1921"
      inkscape:cy="754.39346"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -73,7 +73,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#ffd42a;fill-opacity:1;stroke:#ffffff;stroke-width:0.26458332;filter:url(#filter74)"
+       style="fill:#ff5555;fill-opacity:1;stroke:#ffffff;stroke-width:0.26458332;filter:url(#filter74)"
        id="rect70"
        width="80.130951"
        height="82.776787"
