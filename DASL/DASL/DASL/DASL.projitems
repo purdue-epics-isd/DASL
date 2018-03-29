@@ -60,9 +60,13 @@
     <Folder Include="$(MSBuildThisFileDirectory)Helpers\" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+=======
+    <None Include="$(MSBuildThisFileDirectory)Pre-existing Database\dictionary.csv" />
+>>>>>>> master
   </ItemGroup>
 </Project>

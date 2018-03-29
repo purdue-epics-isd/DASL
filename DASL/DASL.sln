@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DASL", "DASL\DASL\DASL.shproj", "{4CDE99C7-3E9B-4013-8104-AA4CEB935DCC}"
 EndProject
@@ -13,6 +13,7 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		DASL\DASL\DASL.projitems*{4cde99c7-3e9b-4013-8104-aa4ceb935dcc}*SharedItemsImports = 13
 		DASL\DASL\DASL.projitems*{9fe490c4-4490-4821-abad-6d42b3a6bfca}*SharedItemsImports = 4
+		DASL\DASL\DASL.projitems*{d4dcd813-5500-4acb-a50c-9b7cfce45e00}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

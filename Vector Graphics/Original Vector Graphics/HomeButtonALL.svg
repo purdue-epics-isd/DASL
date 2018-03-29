@@ -16,10 +16,7 @@
    version="1.1"
    id="svg3880"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="Icon.svg"
-   inkscape:export-filename="/Users/toryochs/Documents/GitHub/DASL/Vector Graphics/Original Vector Graphics/icon_512x512@2x.png"
-   inkscape:export-xdpi="127.46683"
-   inkscape:export-ydpi="127.46683">
+   sodipodi:docname="Home Button.svg">
   <defs
      id="defs3874" />
   <sodipodi:namedview
@@ -30,8 +27,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="-1132.7424"
-     inkscape:cy="640.10775"
+     inkscape:cx="-1002.0281"
+     inkscape:cy="754.39346"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -39,8 +36,8 @@
      inkscape:measure-end="0,0"
      inkscape:window-width="1440"
      inkscape:window-height="793"
-     inkscape:window-x="141"
-     inkscape:window-y="272"
+     inkscape:window-x="9"
+     inkscape:window-y="0"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata3877">
@@ -50,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -71,33 +68,33 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <rect
-       style="fill:#000000;stroke-width:0.26458332"
+       style="fill:#000000;stroke-width:0.26798603"
        id="rect3914"
        width="21.788652"
-       height="95.527115"
+       height="98"
        x="-328.70532"
-       y="94.12764" />
+       y="93.5" />
     <rect
-       style="fill:#000000;stroke-width:0.26458332"
+       style="fill:#000000;stroke-width:0.26798603"
        id="rect3914-9"
        width="21.788652"
-       height="95.527115"
+       height="98"
        x="-298.91217"
-       y="93.888229" />
+       y="93.5" />
     <rect
-       style="fill:#000000;stroke-width:0.26822239"
+       style="fill:#000000;stroke-width:0.26798603"
        id="rect3914-98"
        width="21.788652"
-       height="98.172951"
+       height="98"
        x="-232.38837"
-       y="93.510254" />
+       y="93.5" />
     <rect
-       style="fill:#000000;stroke-width:0.26770556"
+       style="fill:#000000;stroke-width:0.26798603"
        id="rect3914-3"
        width="21.788652"
-       height="97.794975"
+       height="98"
        x="-202.90623"
-       y="93.510254" />
+       y="93.5" />
     <rect
        style="fill:#000000;stroke-width:0.27090445"
        id="rect3914-98-7"
@@ -188,19 +185,6 @@
            style="-inkscape-font-specification:'Raanana, Normal';font-family:Raanana;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:96.00000121px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" /></flowRegion><flowPara
          id="flowPara4655">DASL</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
-       id="flowRoot4657"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96.00313568px;line-height:1.25;font-family:Copperplate;-inkscape-font-specification:'Copperplate, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff6600;fill-opacity:1;stroke:none"
-       transform="matrix(0.44519006,0,0,0.44055363,384.14111,-6.164425)"><flowRegion
-         id="flowRegion4659"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96.00313568px;font-family:Copperplate;-inkscape-font-specification:'Copperplate, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ff6600"><rect
-           id="rect4661"
-           width="383.3634"
-           height="291.42856"
-           x="-1625.7142"
-           y="425.37683"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96.00313568px;font-family:Copperplate;-inkscape-font-specification:'Copperplate, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ff6600" /></flowRegion><flowPara
-         id="flowPara4663">D A S L</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
        id="flowRoot4665"
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
          id="flowRegion4667"><rect
@@ -209,20 +193,7 @@
            height="102.85714"
            x="-1320"
            y="452.51968" /></flowRegion><flowPara
-         id="flowPara4671" /></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot4673"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.00024796px;line-height:1.25;font-family:'.Apple Color Emoji UI';-inkscape-font-specification:'.Apple Color Emoji UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.29350687,0,0,0.26458333,35.479021,-5.6696429)"><flowRegion
-         id="flowRegion4675"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.00024796px;font-family:'.Apple Color Emoji UI';-inkscape-font-specification:'.Apple Color Emoji UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
-           id="rect4677"
-           width="660"
-           height="58.571453"
-           x="-1242.8572"
-           y="851.09113"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.00024796px;font-family:'.Apple Color Emoji UI';-inkscape-font-specification:'.Apple Color Emoji UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
-         id="flowPara4679">Digital American Sign Language</flowPara></flowRoot>    <text
+         id="flowPara4671" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="-227.16368"
@@ -244,13 +215,257 @@
          x="-234.72322"
          y="219.05127"
          style="stroke-width:0.26458332" /></text>
-    <image
-       y="24.71731"
-       x="-328.526"
-       id="image920"
-       xlink:href="data:image/png;base64,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 "
-       preserveAspectRatio="none"
-       height="14.43869"
-       width="20.335121" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path331"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path335"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path341"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path351"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path355"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path359"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path371"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path373"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path375"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path379"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path381"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path383"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path385"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path387"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path389"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path391"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path393"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path409"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path411"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path413"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path419"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path431"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path451"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path457"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path459"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path461"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path463"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path465"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path469"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path473"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path477"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path479"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path481"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path485"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path491"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path493"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path497"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path501"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path503"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d="m -750.3138,739.47048 c 0,-0.83208 0.64286,-1.11557 1.42857,-0.62997 1.83055,1.13134 1.83055,2.14285 0,2.14285 -0.78571,0 -1.42857,-0.68079 -1.42857,-1.51288 z"
+       id="path515"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path519"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:1.42857146"
+       d=""
+       id="path521"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
   </g>
 </svg>

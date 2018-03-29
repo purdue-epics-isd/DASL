@@ -2,18 +2,25 @@
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using SQLite;
+using System.IO;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace DASL
 {
 	public partial class App : Application
-	{
+	{   
         public App()
 		{
 			InitializeComponent();
 
 			SetMainPage();
+
+            Database.InitUpdate();
+
+            Database.TestDb();
 		}
+
 
 		public static void SetMainPage()
 		{
