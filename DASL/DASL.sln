@@ -11,7 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DASL.iOS", "DASL\DASL.iOS\D
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		DASL\DASL\DASL.projitems*{4cde99c7-3e9b-4013-8104-aa4ceb935dcc}*SharedItemsImports = 13
 		DASL\DASL\DASL.projitems*{9fe490c4-4490-4821-abad-6d42b3a6bfca}*SharedItemsImports = 4
 		DASL\DASL\DASL.projitems*{d4dcd813-5500-4acb-a50c-9b7cfce45e00}*SharedItemsImports = 4
 	EndGlobalSection
