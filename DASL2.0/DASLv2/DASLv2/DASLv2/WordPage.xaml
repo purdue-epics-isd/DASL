@@ -14,11 +14,12 @@
                  Spacing="15">
         <Label Text="{Binding}" 
                x:Name="WordPageTitle"
-               VerticalOptions="CenterAndExpand" 
+               FontSize="Large" 
+               TextColor="Orange" 
+               XAlign="Center"
                HorizontalOptions="CenterAndExpand" />
         <Label Text="{Binding}" 
                x:Name="WordPageWord"
-               VerticalOptions="CenterAndExpand" 
                HorizontalOptions="CenterAndExpand" />
     </StackLayout>
 </ContentPage>
