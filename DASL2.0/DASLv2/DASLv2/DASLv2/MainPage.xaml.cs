@@ -16,13 +16,7 @@ namespace DASLv2
         
         async void OnEnglishSearch (object sender, EventArgs e)
         {
-            if (await this.DisplayAlert(
-                    "English Search",
-                    "Would you like to call ?",
-                    "Yes",
-                    "No"))
-            {
-            }
+            await Navigation.PushAsync(new CategoryPage());
         }
         async void OnWOTD(object sender, EventArgs e)
         {
@@ -30,7 +24,7 @@ namespace DASLv2
         }
         async void OnWOTW(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new WordPage("Word of the Week", "Hello There"));
+            await Navigation.PushAsync(new WordPage("Word of the Week", "General Kenobi"));
         }
     }
 }
