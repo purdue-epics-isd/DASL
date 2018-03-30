@@ -5,7 +5,7 @@
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness">
             <On Platform="iOS" Value="20, 40, 20, 20" />
-            <On Platform="Android, WinPhone, Windows" Value="20" />
+            <On Platform="Android, UWP" Value="20" />
         </OnPlatform>
     </ContentPage.Padding>
     <StackLayout VerticalOptions="FillAndExpand" 
@@ -21,10 +21,23 @@
         <Label Text="{Binding}" 
                x:Name="WordPageWord"
                HorizontalOptions="CenterAndExpand" />
-        <Image
-        Source="starwarslogo.svg" />
+        <Image>
+            <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource">
+                    <On Platform="iOS">
+                        <FileImageSource File="" />
+                    </On>
+                    <On Platform="Android">
+                        <FileImageSource File="Resources/drawable/starwarslogo.svg" />
+                    </On>
+                    <On Platform="UWP">
+                        <FileImageSource File="Images/starwarslogo.svg" />
+                    </On>
+                </OnPlatform>
+            </Image.Source>
 
-
+        </Image>
+       
         <Label Text="Made by Purdue EPICS in Conjunction with ISD" 
                x:Name="WordPageInfo"
                FontSize="8" 
