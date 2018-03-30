@@ -12,7 +12,7 @@ namespace DASLv2
 		public MainPage()
 		{
 			InitializeComponent();
-           
+            
 		}
         
         async void OnEnglishSearch (object sender, EventArgs e)

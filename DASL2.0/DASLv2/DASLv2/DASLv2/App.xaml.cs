@@ -14,7 +14,8 @@ namespace DASLv2
 		public App ()
 		{
 			InitializeComponent();
-			MainPage = new NavigationPage(new DASLv2.MainPage());
+            MainPage = new HomePage();
+			//MainPage = new NavigationPage(new DASLv2.MainPage());
 		}
 
 		protected override void OnStart ()

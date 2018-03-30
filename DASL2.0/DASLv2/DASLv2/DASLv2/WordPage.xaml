@@ -21,9 +21,10 @@
         <Label Text="{Binding}" 
                x:Name="WordPageWord"
                HorizontalOptions="CenterAndExpand" />
-        <ScrollView>
+        <Image
+        Source="starwarslogo.svg" />
 
-        </ScrollView>
+
         <Label Text="Made by Purdue EPICS in Conjunction with ISD" 
                x:Name="WordPageInfo"
                FontSize="8" 
