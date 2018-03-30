@@ -19,12 +19,30 @@
                XAlign="Center"/>
         <Button x:Name="categories" 
                 Text="English Category Search" 
+                HeightRequest="50"
+                WidthRequest = "90" 
+                CornerRadius="10"
+                BorderColor= "Gray" 
+                FontSize = "12" 
+                Margin = "10"
                 Clicked="OnEnglishSearch"/>
         <Button x:Name="wordOfTheDay" 
                 Text="Word of the Day" 
+                HeightRequest="50"
+                WidthRequest = "90" 
+                CornerRadius="10"
+                BorderColor = "Gray" 
+                FontSize = "12" 
+                Margin = "10"
                 Clicked="OnWOTD" />
         <Button x:Name="wordOfTheWeek" 
-                Text="Word of the Week" 
+                Text="Word of the Week"
+                HeightRequest="50"
+                WidthRequest = "90" 
+                CornerRadius="10"
+                BorderColor = "Gray" 
+                FontSize = "12" 
+                Margin = "10"
                 Clicked="OnWOTW"/>
     </StackLayout>
 

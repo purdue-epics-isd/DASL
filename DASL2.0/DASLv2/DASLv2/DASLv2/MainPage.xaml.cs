@@ -12,6 +12,7 @@ namespace DASLv2
 		public MainPage()
 		{
 			InitializeComponent();
+           
 		}
         
         async void OnEnglishSearch (object sender, EventArgs e)
@@ -26,5 +27,7 @@ namespace DASLv2
         {
             await Navigation.PushAsync(new WordPage("Word of the Week", "General Kenobi"));
         }
+
+        
     }
 }

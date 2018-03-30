@@ -21,5 +21,16 @@
         <Label Text="{Binding}" 
                x:Name="WordPageWord"
                HorizontalOptions="CenterAndExpand" />
+        <ScrollView>
+
+        </ScrollView>
+        <Label Text="Made by Purdue EPICS in Conjunction with ISD" 
+               x:Name="WordPageInfo"
+               FontSize="8" 
+               TextColor="Black" 
+               XAlign="Center"
+               HorizontalOptions="CenterAndExpand" />
     </StackLayout>
+      
+  
 </ContentPage>
