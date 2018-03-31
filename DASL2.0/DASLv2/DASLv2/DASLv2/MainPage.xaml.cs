@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.Diagnostics;
+using SQLite;
+using System.IO;
 
 namespace DASLv2
 {
@@ -26,11 +29,39 @@ namespace DASLv2
         }
         async void OnWOTD(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new WordPage("Word of the Day", "Hello There"));
+            //await Navigation.PushAsync(new WordPage("Word of the Day", "Hello There"));
+            try
+            {
+                if (await this.DisplayAlert("Database Test", "Would you like to add a word?", "Yes", "No"))
+                {
+                    Word word = new Word { Name = "Flower", Speech = "Noun", Sentence = "I like red Flowers", Category = "Garden" };
+
+                    App.Dictionary.InitUpdate();
+                    //App.Dictionary.AddWord(word);
+                    //Debug.WriteLine(App.Dictionary.StatusMessage);
+                    //Debug.WriteLine(word.ToString());
+                }
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                Debug.WriteLine(ex.StackTrace);
+            }
+            
         }
         async void OnWOTW(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new WordPage("Word of the Week", "Hello There"));
+            if(await this.DisplayAlert("Database Test 2", "Would you like to see all the words?", "Yes", "No"))
+            {
+                List<Word> words = App.Dictionary.GetAllWords();
+
+                Debug.WriteLine(App.Dictionary.StatusMessage);
+
+                foreach(Word word in words)
+                {
+                    Debug.WriteLine(word);
+                }
+            }
         }
     }
 }
