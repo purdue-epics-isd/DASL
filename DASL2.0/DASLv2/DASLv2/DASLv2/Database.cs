@@ -77,20 +77,5 @@ namespace DASLv2
         {
             //Used to update the databse with the online database
         }
-
-        /*public void TestDb()
-        {
-            Console.WriteLine("How do you do");
-
-            var table = db.Table<Word>();
-            string toCommand;
-
-            foreach(var item in table)
-            {
-                Word word = new Word(item.Name, item.Speech, item.Sentence, item.Category);
-                toCommand = word.ToString();
-                Debug.WriteLine(toCommand + "\n");
-            }
-        }*/
     }
 }

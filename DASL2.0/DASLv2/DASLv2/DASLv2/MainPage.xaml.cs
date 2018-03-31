@@ -34,12 +34,12 @@ namespace DASLv2
             {
                 if (await this.DisplayAlert("Database Test", "Would you like to add a word?", "Yes", "No"))
                 {
-                    Word word = new Word { Name = "Flower", Speech = "Noun", Sentence = "I like red Flowers", Category = "Garden" };
+                    Word word = new Word { Name = "Tree", Speech = "Noun", Sentence = "Trees can become very big", Category = "Nature" };
 
-                    App.Dictionary.InitUpdate();
-                    //App.Dictionary.AddWord(word);
-                    //Debug.WriteLine(App.Dictionary.StatusMessage);
-                    //Debug.WriteLine(word.ToString());
+                    //App.Dictionary.InitUpdate();
+                    App.Dictionary.AddWord(word);
+                    Debug.WriteLine(App.Dictionary.StatusMessage);
+                    Debug.WriteLine(word.ToString());
                 }
             }
             catch(Exception ex)
