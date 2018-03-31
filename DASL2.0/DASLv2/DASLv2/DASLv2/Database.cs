@@ -20,18 +20,13 @@ namespace DASLv2
             db.CreateTable<Word>();
         }
 
+        //Adds a word to the database
         public void AddWord(Word word)
         {
-            //Add word capability
             int result = 0;
 
             try
             {
-                if(string.IsNullOrEmpty(word.Name))
-                {
-                    throw new Exception("Valid name required");
-                }
-
                 result = db.Insert(word);
 
                 StatusMessage = string.Format("{0} record(s) added [Name: {1})", result, word.Name);
@@ -42,6 +37,7 @@ namespace DASLv2
             }
         }
 
+        //Returns a list of all the words in the current database
         public List<Word> GetAllWords()
         {
             try
@@ -57,6 +53,7 @@ namespace DASLv2
             return new List<Word>();
         }
 
+        //Gets the words from a csv at first launch of app. Maybe we can just have the database filled with information when they download?
         public void InitUpdate()
         {
             string dir = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
@@ -72,6 +69,54 @@ namespace DASLv2
                 AddWord(new Word { Name = row[0], Speech = row[1], Sentence = row[2], Category = row[3] });
             }
         }
+
+        //sorted alphabetically
+        public static IList<string> GetCategories()
+        {
+            var words = App.Dictionary.GetAllWords();
+            List<string> categories = new List<string>();
+            bool exists = false;
+
+            foreach(Word word in words)
+            {
+                foreach(string category in categories)
+                {
+                    if(word.Category.Equals(category))
+                    {
+                        exists = true;
+                        break;
+                    }
+                }
+
+                if(!(exists))
+                {
+                    categories.Add(word.Category);
+                }
+            }
+
+            categories.Sort();
+            return categories;
+        }
+
+        //sorted alphabetically
+        public static IList<string> GetWordsFromCategory(string category)
+        {
+            var words = App.Dictionary.GetAllWords();
+            List<string> wordsInCat = new List<string>();
+
+            foreach(Word word in words)
+            {
+                if(word.Category.Equals(category))
+                {
+                    wordsInCat.Add(word.Name);
+                }
+            }
+
+            wordsInCat.Sort();
+
+            return wordsInCat;
+        }
+
 
         public void UpdateDatabase()
         {
