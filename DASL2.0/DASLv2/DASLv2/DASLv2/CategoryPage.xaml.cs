@@ -13,7 +13,7 @@ namespace DASLv2
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CategoryPage : ContentPage
     {
-        public static ObservableCollection<string> CategoryItems { get; set; }
+        public static int i = 0; //Change to non static once backend is done.
         public CategoryPage()
         {
             InitializeComponent();
@@ -41,6 +41,7 @@ namespace DASLv2
             InitializeComponent();
             CategoryPageTitle.Text = name;
             CategoryListView.ItemsSource = items;
+            i++;
         }
 
         /*void CategoryTapped(object sender, ItemTappedEventArgs e)
@@ -58,18 +59,37 @@ namespace DASLv2
 
             //give all categories that are 1 level below the given category
             //static List<String> getSubCategories(string category);
-            //Call getSubCategories(e.SelectedItem.ToString();
-            //DisplayAlert("Item Selected", e.SelectedItem.ToString(), "Ok");
-            List<string> list = new List<string> {
+            //i = getSubCategories(e.SelectedItem.ToString()).Count();
+            List<string> newList;
+            if(i % 2 == 0)
+            {
+                newList = new List<string> {
                 "Zenyatta",
                 "Moira",
                 "Lucio",
                 "Torbjorn",
                 "Pharah"
             };
+            } else
+            {
+                newList = new List<string> {
+                "Han Solo",
+                "Luke Skywalker",
+                "Leia Skywalker",
+                "Anaking Skywalker",
+                "Obi-Wan Kenobi",
+                "Ahsoka Tano"
+                };
+            }
 
-            await Navigation.PushAsync(new CategoryPage(e.SelectedItem.ToString(), list));
-            //await Navigation.PushAsync(new WordPage(e.SelectedItem.ToString(), "This Worked"));
+            if (i > 2)
+            {
+                await Navigation.PushAsync(new WordPage(e.SelectedItem.ToString(), "This Worked"));
+            } else
+            {
+               await Navigation.PushAsync(new CategoryPage(e.SelectedItem.ToString(), newList));
+            }
+            //
             //comment out if you want to keep selections
             ListView lst = (ListView)sender;
             lst.SelectedItem = null;
