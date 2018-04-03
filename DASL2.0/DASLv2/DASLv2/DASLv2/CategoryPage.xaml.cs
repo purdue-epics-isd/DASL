@@ -58,7 +58,7 @@ namespace DASLv2
                 "Han Solo",
                 "Luke Skywalker",
                 "Leia Skywalker",
-                "Anaking Skywalker",
+                "Anakin Skywalker",
                 "Obi-Wan Kenobi",
                 "Ahsoka Tano"
                 };

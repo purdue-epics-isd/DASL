@@ -13,11 +13,6 @@
             HorizontalOptions="CenterAndExpand" >
         </Label>
         <ScrollView>
-            <!--<ListView x:Name="CategoryListView"
-                      ItemSelected="CategorySelected" 
-                      ItemTapped="CategoryTapped" 
-                      IsPullToRefreshEnabled="true" 
-                      Refreshing="CategoryRefresh" />-->
             <ListView x:Name="CategoryListView"
                       ItemSelected="CategorySelected" />
                       <!-- IsPullToRefreshEnabled="true" 
