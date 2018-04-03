@@ -17,24 +17,6 @@ namespace DASLv2
         public CategoryPage()
         {
             InitializeComponent();
-
-            /*CategoryListView.ItemsSource = new ObservableCollection<string>()
-            {
-                "Harry Potter",
-                "Ron Weasly",
-                "Hermione Granger",
-                "Mad Eye Moody",
-                "Draco Malfoy"
-            };*/
-   
-            /*CategoryListView.ItemsSource = new List<string> {
-                "Harry Potter",
-                "Ron Weasly",
-                "Hermione Granger",
-                "Mad Eye Moody",
-                "Draco Malfoy"
-            };*/
-
         }
         public CategoryPage(string name, List<string> items)
         {
