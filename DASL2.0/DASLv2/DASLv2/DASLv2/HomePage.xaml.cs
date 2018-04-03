@@ -17,10 +17,10 @@ namespace DASLv2
             InitializeComponent();
             var navigationPage = new NavigationPage(new DASLv2.MainPage());
             navigationPage.Title = "Navigation";
-            var navigationPage2 = new NavigationPage(new DASLv2.MainPage());
-            navigationPage2.Title = "Settings";
+            var settingsPage = new NavigationPage(new DASLv2.MainPage()); //Change to Profile settings page when zeeshan gives it to us
+            settingsPage.Title = "Settings";
             Children.Add(navigationPage);
-            Children.Add(navigationPage2);
+            Children.Add(settingsPage);
         }
     }
 }
