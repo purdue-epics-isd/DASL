@@ -9,12 +9,24 @@ using Xamarin.Forms.Xaml;
 
 namespace DASLv2
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class CategoryPage : ContentPage
-	{
-		public CategoryPage ()
-		{
-			InitializeComponent ();
-		}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class CategoryPage : ContentPage
+    {
+        public CategoryPage()
+        {
+            InitializeComponent();
+
+
+            CategoryView.ItemsSource = new string[]
+            {
+                "Hello",
+                "There",
+                "General",
+                "Kenobi"
+            };
+        }
+        class Word{
+
+        }
 	}
 }

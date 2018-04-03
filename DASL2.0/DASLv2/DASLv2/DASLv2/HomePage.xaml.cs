@@ -18,7 +18,7 @@ namespace DASLv2
             var navigationPage = new NavigationPage(new DASLv2.MainPage());
             navigationPage.Title = "Navigation";
             var navigationPage2 = new NavigationPage(new DASLv2.MainPage());
-            navigationPage2.Title = "Navigation2";
+            navigationPage2.Title = "Settings";
             Children.Add(navigationPage);
             Children.Add(navigationPage2);
         }
