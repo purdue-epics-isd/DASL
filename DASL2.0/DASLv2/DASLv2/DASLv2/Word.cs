@@ -20,12 +20,15 @@ namespace DASLv2
         [Column("sentence")]
         public string Sentence { get; set; }
         
-        [Column("category")]
-        public string Category { get; set; }
+        [Column("parent category")]
+        public string RootCategory { get; set; }
+
+        [Column("child category")]
+        public string SubCategory { get; set; }
 
         public override string ToString()
         {
-            return Name + " " + Speech + " " + Sentence + " " + Category;
+            return Name + " " + Speech + " " + Sentence + " " + RootCategory + " " + SubCategory;
         }
     }
 }

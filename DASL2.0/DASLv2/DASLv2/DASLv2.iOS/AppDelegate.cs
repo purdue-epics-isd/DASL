@@ -24,7 +24,7 @@ namespace DASLv2.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            string dbPath = FileAccessHelper.GetLocalFilePath("test2.db3");
+            string dbPath = FileAccessHelper.GetLocalFilePath("dbTest.db3");
             LoadApplication(new App(dbPath));
 
             return base.FinishedLaunching(app, options);

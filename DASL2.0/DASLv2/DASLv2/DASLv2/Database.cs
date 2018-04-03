@@ -66,57 +66,9 @@ namespace DASLv2
                 var line = reader.ReadLine();
                 var row = line.Split(',');
 
-                AddWord(new Word { Name = row[0], Speech = row[1], Sentence = row[2], Category = row[3] });
+                AddWord(new Word { Name = row[0], Speech = row[1], Sentence = row[2], RootCategory = row[3], SubCategory = row[4] });
             }
         }
-
-        //sorted alphabetically
-        public static IList<string> GetCategories()
-        {
-            var words = App.Dictionary.GetAllWords();
-            List<string> categories = new List<string>();
-            bool exists = false;
-
-            foreach(Word word in words)
-            {
-                foreach(string category in categories)
-                {
-                    if(word.Category.Equals(category))
-                    {
-                        exists = true;
-                        break;
-                    }
-                }
-
-                if(!(exists))
-                {
-                    categories.Add(word.Category);
-                }
-            }
-
-            categories.Sort();
-            return categories;
-        }
-
-        //sorted alphabetically
-        public static IList<string> GetWordsFromCategory(string category)
-        {
-            var words = App.Dictionary.GetAllWords();
-            List<string> wordsInCat = new List<string>();
-
-            foreach(Word word in words)
-            {
-                if(word.Category.Equals(category))
-                {
-                    wordsInCat.Add(word.Name);
-                }
-            }
-
-            wordsInCat.Sort();
-
-            return wordsInCat;
-        }
-
 
         public void UpdateDatabase()
         {
