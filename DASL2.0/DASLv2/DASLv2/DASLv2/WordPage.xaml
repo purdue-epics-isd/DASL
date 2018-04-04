@@ -57,10 +57,10 @@
                             <FileImageSource File="" />
                         </On>
                         <On Platform="Android">
-                            <FileImageSource File="Resources/drawable/apple.gif" />
+                            <FileImageSource File="Resources/drawable/applegif.gif" />
                         </On>
                         <On Platform="UWP">
-                            <FileImageSource File="Images/apple.gif" />
+                            <FileImageSource File="Images/applegif.gif" />
                         </On>
                     </OnPlatform>
                 </Image.Source>

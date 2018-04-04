@@ -13,14 +13,14 @@
             HorizontalOptions="CenterAndExpand" >
         </Label>
         <ScrollView>
-            <!-- <ListView x:Name="CategoryListView" ItemSelected="CategorySelected" /> -->
+            <ListView x:Name="CategoryListView" ItemSelected="CategorySelected" />
             <!-- <ListView.ItemTemplate>
                         <DataTemplate>
                             <local:CustomCell Name="{Binding Name}" Text="{Binding Name}" />
                         </DataTemplate>
                     </ListView.ItemTemplate>
              </ListView> -->
-            <ListView x:Name="CategoryListView" ItemSelected="CategorySelected">
+            <!--<ListView x:Name="CategoryListView" ItemSelected="CategorySelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -33,7 +33,7 @@
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView>
+            </ListView> -->
             <!-- IsPullToRefreshEnabled="true" 
                       Refreshing="CategoryRefresh"/> -->
         </ScrollView>
