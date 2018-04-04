@@ -45,13 +45,14 @@ namespace DASLv2
             List<string> newList;
             if(i % 2 == 0)
             {
-                newList = new List<string> {
+                newList = Category.GetRootCategories();
+                /*newList = new List<string> {
                 "Zenyatta",
                 "Moira",
                 "Lucio",
                 "Torbjorn",
                 "Pharah"
-            };
+            };*/
             } else
             {
                 newList = new List<string> {
