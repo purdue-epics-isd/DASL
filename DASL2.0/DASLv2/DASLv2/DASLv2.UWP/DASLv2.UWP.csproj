@@ -103,7 +103,7 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="DASLv2.UWP_TemporaryKey.pfx" />
-    <None Include="Dictionary\dictionary.csv" />
+    <Content Include="Dictionary\dictionary.txt" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\Default.rd.xml" />
@@ -166,6 +166,9 @@
     <SDKReference Include="Microsoft.VCLibs.120, Version=14.0">
       <Name>Microsoft Visual C++ 2013 Runtime Package for Windows Universal</Name>
     </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
