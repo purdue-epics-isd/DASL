@@ -19,6 +19,13 @@
                TextColor="Orange" 
                XAlign="Center"
                HorizontalOptions="CenterAndExpand" />
+            <Frame BackgroundColor="DarkGray">
+                <Label  Text="{Binding}"
+                        x:Name="WordPageWord"
+                        HorizontalOptions="CenterAndExpand"
+                        FontSize="Large"
+                        TextColor="DarkOrange"/>
+            </Frame>
             <Image>
                 <Image.Source>
                     <OnPlatform x:TypeArguments="ImageSource">
@@ -34,22 +41,42 @@
                     </OnPlatform>
                 </Image.Source>
             </Image>
-            <Label Text="{Binding}" 
-               x:Name="WordPageWord"
-               HorizontalOptions="CenterAndExpand" />
 
-            <Label Text="{Binding}" 
-               x:Name="WordPageDefinition"
-               HorizontalOptions="CenterAndExpand" />
-            <Label Text="{Binding}" 
-               x:Name="WordPageSentenceOne"
-               HorizontalOptions="CenterAndExpand" />
-            <Label Text="{Binding}" 
-               x:Name="WordPageSentenceTwo"
-               HorizontalOptions="CenterAndExpand" />
-            <Label Text="{Binding}" 
-               x:Name="WordPageSentenceThree"
-               HorizontalOptions="CenterAndExpand" />
+            <Frame BackgroundColor="DarkGray">
+                <Label  Text="Definition"
+                        FontSize="Large" 
+                        TextColor="DarkOrange" 
+                        XAlign="Center"/>
+            </Frame>
+            <Frame BackgroundColor="LightGray">
+                <Label Text="{Binding}" 
+                    x:Name="WordPageDefinition"
+                    HorizontalOptions="CenterAndExpand" />
+            </Frame>
+
+            <Frame BackgroundColor="DarkGray">
+                
+                <Label  Text="Example Sentences"
+                        FontSize="Large" 
+                        TextColor="DarkOrange" 
+                        XAlign="Center"/>
+            </Frame>
+            <Frame BackgroundColor="LightGray">
+                <Label  Text="{Binding}" 
+                        x:Name="WordPageSentenceOne"
+                        HorizontalOptions="CenterAndExpand" />
+            </Frame>
+            <Frame BackgroundColor="LightGray">
+                <Label  Text="{Binding}" 
+                        x:Name="WordPageSentenceTwo"
+                        HorizontalOptions="CenterAndExpand" />
+            </Frame>
+            <Frame BackgroundColor="LightGray">
+                <Label  Text="{Binding}" 
+                        x:Name="WordPageSentenceThree"
+                        HorizontalOptions="CenterAndExpand" />
+            </Frame>
+            
             <Image>
                 <Image.Source>
                     <OnPlatform x:TypeArguments="ImageSource">
