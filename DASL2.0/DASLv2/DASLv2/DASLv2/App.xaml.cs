@@ -11,10 +11,13 @@ namespace DASLv2
 {
 	public partial class App : Application
 	{
-		public App ()
+        public static Database Dictionary { get; private set; }
+		public App (string dbPath)
 		{
 			InitializeComponent();
             MainPage = new HomePage();
+
+            Dictionary = new Database(dbPath);
 			//MainPage = new NavigationPage(new DASLv2.MainPage());
 		}
 
