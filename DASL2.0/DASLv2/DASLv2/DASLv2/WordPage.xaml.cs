@@ -22,5 +22,15 @@ namespace DASLv2
             WordPageTitle.Text = pageName;
             WordPageWord.Text = pageWord;
         }
+        public WordPage(string pageName, string pageWord, string pageDefinition, string pageSentenceOne, string pageSentenceTwo, string pageSentenceThree)
+        {
+            InitializeComponent();
+            WordPageTitle.Text = pageName;
+            WordPageWord.Text = pageWord;
+            WordPageDefinition.Text = pageDefinition;
+            WordPageSentenceOne.Text = pageSentenceOne;
+            WordPageSentenceTwo.Text = pageSentenceTwo;
+            WordPageSentenceThree.Text = pageSentenceThree;
+        }
     }
 }

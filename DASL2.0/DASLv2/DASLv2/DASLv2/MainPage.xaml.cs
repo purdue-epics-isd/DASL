@@ -28,7 +28,7 @@ namespace DASLv2
         }
         async void OnWOTD(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new WordPage("Word of the Day", "Hello There"));
+            await Navigation.PushAsync(new WordPage("Word of the Day", "Apple", "A fruit that comes from a tree", "The apple was yummy", "Apples are a good source of fiber", "Fuck Apples"));
         }
         async void OnWOTW(object sender, EventArgs e)
         {
