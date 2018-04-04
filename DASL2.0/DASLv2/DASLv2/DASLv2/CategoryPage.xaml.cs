@@ -13,17 +13,19 @@ namespace DASLv2
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CategoryPage : ContentPage
     {
-        public static int i = 0; //Change to non static once backend is done.
+        //public static int i = 0; //Change to non static once backend is done.
+        public bool isWordPage = false;
         public CategoryPage()
         {
             InitializeComponent();
         }
-        public CategoryPage(string name, List<string> items)
+        public CategoryPage(string name, List<string> items,bool isWordPage)
         {
             InitializeComponent();
             CategoryPageTitle.Text = name;
             CategoryListView.ItemsSource = items;
-            i++;
+            this.isWordPage = isWordPage;
+            //i++;
         }
 
         /*void CategoryTapped(object sender, ItemTappedEventArgs e)
@@ -41,11 +43,12 @@ namespace DASLv2
 
             //give all categories that are 1 level below the given category
             //static List<String> getSubCategories(string category);
-            //i = getSubCategories(e.SelectedItem.ToString()).Count();
+            List<string> cats = Category.GetSubCategories(e.SelectedItem.ToString());
+            int i = cats.Count();
             List<string> newList;
-            if(i % 2 == 0)
+            if(i == 0)
             {
-                newList = Category.GetRootCategories();
+                newList = Category.GetWordNamesFromCategory(e.SelectedItem.ToString());
                 /*newList = new List<string> {
                 "Zenyatta",
                 "Moira",
@@ -55,6 +58,8 @@ namespace DASLv2
             };*/
             } else
             {
+                newList = cats;
+/*
                 newList = new List<string> {
                 "Han Solo",
                 "Luke Skywalker",
@@ -63,14 +68,18 @@ namespace DASLv2
                 "Obi-Wan Kenobi",
                 "Ahsoka Tano"
                 };
+*/
             }
 
-            if (i > 2)
+            if (isWordPage)
             {
                 await Navigation.PushAsync(new WordPage(e.SelectedItem.ToString(), "This Worked"));
+            } else if (i==0)
+            {
+               await Navigation.PushAsync(new CategoryPage(e.SelectedItem.ToString(), newList,true));
             } else
             {
-               await Navigation.PushAsync(new CategoryPage(e.SelectedItem.ToString(), newList));
+                await Navigation.PushAsync(new CategoryPage(e.SelectedItem.ToString(), newList, false));
             }
             //
             //comment out if you want to keep selections

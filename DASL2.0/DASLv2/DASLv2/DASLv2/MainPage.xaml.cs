@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 using Xamarin.Forms;
 
 namespace DASLv2
@@ -24,7 +25,9 @@ namespace DASLv2
                 "Mad Eye Moody",
                 "Draco Malfoy"
             };
-            await Navigation.PushAsync(new CategoryPage("Category Page", list));
+            //list = Category.GetRootCategories();
+            Debug.WriteLine("Opening new Category page (size "+list.Count+")");
+            await Navigation.PushAsync(new CategoryPage("Category Page", list,false));
         }
         async void OnWOTD(object sender, EventArgs e)
         {

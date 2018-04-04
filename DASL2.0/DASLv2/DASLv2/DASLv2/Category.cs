@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace DASLv2
@@ -10,11 +11,13 @@ namespace DASLv2
         public static List<string> GetRootCategories()
         {
             var words = App.Dictionary.GetAllWords();
+            Debug.WriteLine("allWordCount:" + words.Count);
             List<string> categories = new List<string>();
             bool exists = false;
 
             foreach(Word word in words)
             {
+                Debug.WriteLine("root:"+word.RootCategory);
                 foreach(string cat in categories)
                 {
                     if(word.RootCategory.Equals(cat))
