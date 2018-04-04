@@ -5,21 +5,75 @@
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness">
             <On Platform="iOS" Value="20, 40, 20, 20" />
-            <On Platform="Android, WinPhone, Windows" Value="20" />
+            <On Platform="Android, UWP" Value="20" />
         </OnPlatform>
     </ContentPage.Padding>
-    <StackLayout VerticalOptions="FillAndExpand" 
+    <ScrollView>
+        <StackLayout VerticalOptions="FillAndExpand" 
                  HorizontalOptions="FillAndExpand" 
                  Orientation="Vertical" 
                  Spacing="15">
-        <Label Text="{Binding}" 
+            <Label Text="{Binding}" 
                x:Name="WordPageTitle"
                FontSize="Large" 
                TextColor="Orange" 
                XAlign="Center"
                HorizontalOptions="CenterAndExpand" />
-        <Label Text="{Binding}" 
+            <Image>
+                <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource">
+                        <On Platform="iOS">
+                            <FileImageSource File="" />
+                        </On>
+                        <On Platform="Android">
+                            <FileImageSource File="Resources/drawable/apple.jpg" />
+                        </On>
+                        <On Platform="UWP">
+                            <FileImageSource File="Images/apple.jpg" />
+                        </On>
+                    </OnPlatform>
+                </Image.Source>
+            </Image>
+            <Label Text="{Binding}" 
                x:Name="WordPageWord"
                HorizontalOptions="CenterAndExpand" />
-    </StackLayout>
+
+            <Label Text="{Binding}" 
+               x:Name="WordPageDefinition"
+               HorizontalOptions="CenterAndExpand" />
+            <Label Text="{Binding}" 
+               x:Name="WordPageSentenceOne"
+               HorizontalOptions="CenterAndExpand" />
+            <Label Text="{Binding}" 
+               x:Name="WordPageSentenceTwo"
+               HorizontalOptions="CenterAndExpand" />
+            <Label Text="{Binding}" 
+               x:Name="WordPageSentenceThree"
+               HorizontalOptions="CenterAndExpand" />
+            <Image>
+                <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource">
+                        <On Platform="iOS">
+                            <FileImageSource File="" />
+                        </On>
+                        <On Platform="Android">
+                            <FileImageSource File="Resources/drawable/applegif.gif" />
+                        </On>
+                        <On Platform="UWP">
+                            <FileImageSource File="Images/applegif.gif" />
+                        </On>
+                    </OnPlatform>
+                </Image.Source>
+            </Image>
+            <Label Text="Made by Purdue EPICS in Conjunction with ISD" 
+               x:Name="WordPageInfo"
+               FontSize="8" 
+               TextColor="Black" 
+               XAlign="Center"
+               HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ScrollView>
+    
+      
+  
 </ContentPage>

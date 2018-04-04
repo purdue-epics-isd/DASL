@@ -12,25 +12,29 @@ namespace DASLv2
 		public MainPage()
 		{
 			InitializeComponent();
+            
 		}
         
         async void OnEnglishSearch (object sender, EventArgs e)
         {
-            if (await this.DisplayAlert(
-                    "English Search",
-                    "Would you like to call ?",
-                    "Yes",
-                    "No"))
-            {
-            }
+            List<string> list = new List<string> {
+                "Harry Potter",
+                "Ron Weasly",
+                "Hermione Granger",
+                "Mad Eye Moody",
+                "Draco Malfoy"
+            };
+            await Navigation.PushAsync(new CategoryPage("Category Page", list));
         }
         async void OnWOTD(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new WordPage("Word of the Day", "Hello There"));
+            await Navigation.PushAsync(new WordPage("Word of the Day", "Apple", "A fruit that comes from a tree", "The apple was yummy", "Apples are a good source of fiber", "Fuck Apples"));
         }
         async void OnWOTW(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new WordPage("Word of the Week", "Hello There"));
+            await Navigation.PushAsync(new WordPage("Word of the Week", "General Kenobi"));
         }
+
+        
     }
 }
