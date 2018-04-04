@@ -40,28 +40,41 @@ namespace DASLv2
 
         public static List<string> GetSubCategories(string root)
         {
-            var words = GetWordsFromRootCategory(root);
-            List<string> categories = new List<string>();
-            bool exists = false;
-
-            foreach(Word word in words)
+            List<string> categories;
+            try
             {
-                foreach (string cat in categories)
+                Debug.WriteLine("Getting sub categories for [" + root + "]");
+                var words = GetWordsFromRootCategory(root);
+                categories = new List<string>();
+                bool exists = false;
+
+                foreach (Word word in words)
                 {
-                    if (word.SubCategory.Equals(cat))
+                    exists = false;
+                    foreach (string cat in categories)
                     {
-                        exists = true;
-                        break;
+                        if (String.Equals(word.SubCategory, cat))
+                        {
+                            exists = true;
+                            break;
+                        }
+                    }
+
+                    if (exists == false)
+                    {
+                        categories.Add(word.SubCategory);
                     }
                 }
-
-                if (!exists)
+                Debug.WriteLine("cat returned " + categories.Count);
+                return categories;
+            } catch {
+                return new List<string>
                 {
-                    categories.Add(word.SubCategory);
-                }
-            }
-
-            return categories;
+                    "Word A",
+                    "Word B",
+                    "Word C"
+                };
+            } 
         }
 
         //sorted alphabetically
