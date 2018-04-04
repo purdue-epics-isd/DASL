@@ -1,0 +1,36 @@
+Need,Verb,I need to go to the store.  ,They need to leave. ,I need to do homework.  ,A lack of something desirable or useful.,Common,Verbs
+Ask,Verb,You have to  ask before going to the bathroom.,I didn't ask him that.,May I ask for a favor?,To seek information.,Common ,Verbs
+Microwave,Noun,I put my leftovers in the microwave.  ,She heated up her soup in the microwave.  ,She used her microwave to heat up the chicken.  ,An oven in which food is cooked by the heat produced by the absorption of microwave energy by water molecules in the food.,Home,Kitchen
+Sink,Noun,Wash your hands in the sink.,Leave the dirty dishes in the sink.,Fill the sink with water.,A stationary basin for water usually in a kitchen.,Home,Kitchen
+Beautiful,Adjective ,Mary was beautiful.  ,What a beautiful view!,Tommy has a beautiful car.  ,Having qualities of beauty; exciting aesthetic pleasure.,Descriptions,People
+Important,Adjective ,A healthy diet is very important.,I wish I could be rich and important.,Scientists have made an important discovery.,Having great meaning or influence,Descriptions,People
+Mother,Noun,My mother is a teacher.  ,I have to help my mother.  ,My mother bought us a puppy.  ,A female parent; a woman in authority.,People,Family
+Grandfather,Noun,We always go to my grandfather's house for Christmas,My grandfather only has grey hairs left.,My grandfather went to Asia when he was younger.,The father of one's father or mother.,People,Family
+Sibling,Noun,I have two siblings.,My siblings and I get along very well.,My sibling and I always split our chores.,One or two individuals with usually two parents in common but sometimes only one.,People,Family
+Cold,Adjective ,I am very cold.  ,My feet got cold.  ,She likes cold pizza.  ,Having or being a temperature that is uncomfortably low for people.,Weather,Temperature
+Hot,Adjective ,I am very hot.,My computer gets hot when I use it too much.,I get hot very easily.,Having a high temperature.,Weather,Temperature
+Humid,Adjective ,It is very humid here.,The humidity destroys my hair.,I don't like summer because it gets hot and humid.,Relatively high level of water vapor in the atmosphere.,Weather,Temperature
+Bed,Noun,He loved how soft his bed was.,She always went to bed at 9:00 P.M..,The room contains only a bed and a dresser.,A piece of furniture used for sleeping.,Home,Bedroom
+Closet,Noun,She keeps her clothes in the closet.,The closet was completely full.,The man grabbed a broom from the closet.,A small room for storing items like household supplies or clothing.,Home,Bedroom
+Dresser,Noun,He put his socks in the top drawer of the dresser.,The dresser was a cool blue color.,She stores her iPad on the dresser at night.,A piece of furniture that has drawers for storage.,Home,Bedroom
+Couch,Noun,He watched television from the couch.,She liked to lie on the couch after school.,The sat on the couch to watch a movie.,A piece of furniture that one can sit or lie on.,Home,Living Room
+Television,Noun,She turned the volume of the television down.,He watched his favorite television show.,The family watched television with dinner.,An electronic device that displays a signal on a screen for the user to see.,Home,Living Room
+Table,Noun,He sat at the table to work on his homework.,The family ate dinner at the table.,She put her book down on the table.,A piece of furniture made up of a flat surface put on top of a set of legs.,Home,Dining Room
+Chairs,Noun,The class sat quietly in their chairs.,The chair was uncomfortable.,The chair was beautiful.,A piece of furniture normally having four legs and a back for one person.,Home ,Dining Room
+Washer,Noun,He put his clothes in the washer.,The washing machine cleaned their clothes.,She took the clothes from the washer and put them in the dryer,A machine used for washing clothes and household linen.,Home,Laundry Room
+Dryer,Noun,She put the clothes in the dryer.,Clothes coming from a dryer are often very hot.,He took the clothes out of the dryer.,A device for drying something by heat or air.,Home,Laundry Room
+Detergent,Noun,She put detergent in the washer with her clothes.,Soap is a detergent that cleans dishes.,The detergent smelled like flowers.,An agent used to clean different items.,Home,Laundry Room
+What,Pronoun,What is your name?,What do you want for dinner?,What did you say?,Used to ask for information about someone or something.,Common,Questions
+How ,Adverb,How are you doing today?,How did you meet them?,How old is your brother?,Used to ask in what manner or way.,Common,Questions
+When,Adverb,When did you move to this town?,Do you remember when you went to the store?,When was Easter?,Used to ask about at what time something happened.,Common,Questions
+Up,Adverb,The book is up on the shelf.,Jack and Jill went up the hill.,She looked up the stairs.,From a lower to a higher place or position.,Common,Location
+There,Adverb,Your backpack is over there.,You should go over there.,I am going to go there soon.,In or at that place.,Common,Location
+Here,Adverb,I like coming here.,Here is where I live.,I am glad you are finally here. ,In or at this place.,Common,Location
+How are you?,Phrase,How are you doing?,How are you going to get to school?,How are you and your family?,A phrase for greeting people that you know.,Common,Greetings
+What's up?,Phrase,What's up?,What's up with you?,What's up with Sally?,A casual greeting.,Common,Greetings
+Dirty,Adjective ,That jacket is dirty and needs to be cleaned.,My mom wants me to clean the dirty dishes.,Jack got dirty after playing outside.,Covered in unclean material.,Appearance,Things
+Colorful,Adjective ,The bird has colorful feathers.,I like your colorful shirt.,The sunset is so colorful.,Having bright or many colors.,Appearance,Things
+Blue,Adjective/Noun,The sky is blue.,Blue is my favorite color.,She painted her fingernails blue.,Having the color of a clear sky.,Appearance,Colors
+Purple,Adjective/Noun,These grapes look purple.,The cover of the book is purple.,She likes the color purple.,A color that is between red and blue.,Appearance,Colors
+Circle,Noun,She drew as circle on the piece of paper.,The table is in the shape of a circle.,We have been walking in circles all day.,A perfectly round shape.,Appearance,Shapes
+Square,Noun,My sandwhich is in the shape of a square.,The chess board has squares on it.,The cloth was cut into a square.,A four-sided shape that has four straight sides that are the same length.,Appearance,Shapes

@@ -17,13 +17,14 @@ namespace DASLv2
         
         async void OnEnglishSearch (object sender, EventArgs e)
         {
-            List<string> list = new List<string> {
+            List<string> list = Category.GetRootCategories();
+            /*List<string> list = new List<string> {
                 "Harry Potter",
                 "Ron Weasly",
                 "Hermione Granger",
                 "Mad Eye Moody",
                 "Draco Malfoy"
-            };
+            */
             await Navigation.PushAsync(new CategoryPage("Category Page", list));
         }
         async void OnWOTD(object sender, EventArgs e)

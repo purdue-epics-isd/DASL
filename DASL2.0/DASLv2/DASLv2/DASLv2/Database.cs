@@ -56,7 +56,7 @@ namespace DASLv2
         //Gets the words from a csv at first launch of app. Maybe we can just have the database filled with information when they download?
         public void InitUpdate()
         {
-            string file = @".\Dictionary\dictionary.txt";
+            string file = @".\Data\dictionary.txt";
 
             var reader = new StreamReader(File.OpenRead(file));
             List< string> row = new List<string>();

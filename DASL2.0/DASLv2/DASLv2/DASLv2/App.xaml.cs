@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Diagnostics;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,6 +18,7 @@ namespace DASLv2
             MainPage = new HomePage();
 
             Dictionary = new Database(dbPath);
+            Dictionary.InitUpdate();
 			//MainPage = new NavigationPage(new DASLv2.MainPage());
 		}
 

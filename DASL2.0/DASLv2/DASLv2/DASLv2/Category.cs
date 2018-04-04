@@ -9,12 +9,13 @@ namespace DASLv2
 
         public static List<string> GetRootCategories()
         {
-            var words = App.Dictionary.GetAllWords();
+            List<Word> words = App.Dictionary.GetAllWords();
             List<string> categories = new List<string>();
             bool exists = false;
 
             foreach(Word word in words)
             {
+                exists = false;
                 foreach(string cat in categories)
                 {
                     if(word.RootCategory.Equals(cat))
@@ -62,7 +63,7 @@ namespace DASLv2
         //sorted alphabetically
         public static List<Word> GetWordsFromRootCategory(string category)
         {
-            var words = App.Dictionary.GetAllWords();
+            List<Word> words = App.Dictionary.GetAllWords();
             List<Word> wordsInCat = new List<Word>();
 
             foreach (Word word in words)

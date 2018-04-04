@@ -105,6 +105,7 @@
     <None Include="DASLv2.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\Dictionary.txt" />
     <Content Include="Images\apple.jpg" />
     <Content Include="Images\applegif.gif" />
     <Content Include="Images\starwarslogo.svg" />
