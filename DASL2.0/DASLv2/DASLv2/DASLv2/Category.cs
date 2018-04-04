@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Text;
 
@@ -18,19 +19,22 @@ namespace DASLv2
                 exists = false;
                 foreach(string cat in categories)
                 {
-                    if(word.RootCategory.Equals(cat))
+                    //Debug.WriteLine("Comparing " + word.RootCategory  + " to " + cat);
+                    if(String.Equals(word.RootCategory,cat))
                     {
+                        Debug.WriteLine("exists");
                         exists = true;
                         break;
                     }
                 }
-
-                if(!exists)
+                //Debug.WriteLine(""+exists);
+                if(exists == false)
                 {
+                  //  Debug.WriteLine("Adding category " + word.RootCategory);
                     categories.Add(word.RootCategory);
                 }
             }
-
+            //Debug.WriteLine("");
             return categories;
         }
 

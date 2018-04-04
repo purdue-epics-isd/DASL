@@ -73,5 +73,20 @@ namespace DASLv2
         {
             //Used to update the databse with the online database
         }
+
+        public Word NameToWord(string name)
+        {
+            var words = GetAllWords();
+            foreach (Word word in words)
+            {
+                if (word.Name.Equals(name))
+                {
+                    return word;
+                }
+            }
+
+            StatusMessage = "Word not found";
+            return (new Word());
+        }
     }
 }
