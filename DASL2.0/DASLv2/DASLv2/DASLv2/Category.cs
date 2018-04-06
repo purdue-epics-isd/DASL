@@ -53,7 +53,7 @@ namespace DASLv2
                     exists = false;
                     foreach (string cat in categories)
                     {
-                        if (String.Equals(word.SubCategory.Trim(), cat))
+                        if (String.Equals(word.SubCategory, cat))
                         {
                             exists = true;
                             break;
@@ -62,7 +62,7 @@ namespace DASLv2
 
                     if (exists == false)
                     {
-                        categories.Add(word.SubCategory.Trim());
+                        categories.Add(word.SubCategory);
                     }
                 }
                 Debug.WriteLine("cat returned " + categories.Count);

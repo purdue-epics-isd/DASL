@@ -65,7 +65,7 @@ namespace DASLv2
             {
                 var line = reader.ReadLine();
                 row = new List<string>(line.Split(','));
-                AddWord(new Word { Name = row[0], Speech = row[1], Sentence1 = row[2], Sentence2 = row[3], Sentence3 = row[4], Definition = row[5], RootCategory = row[6], SubCategory = row[7] });
+                AddWord(new Word { Name = row[0].Trim(), Speech = row[1], Sentence1 = row[2], Sentence2 = row[3], Sentence3 = row[4], Definition = row[5], RootCategory = row[6].Trim(), SubCategory = row[7].Trim() });
             }
         }
 
