@@ -31,6 +31,21 @@ namespace DASLv2
             WordPageSentenceOne.Text = pageSentenceOne;
             WordPageSentenceTwo.Text = pageSentenceTwo;
             WordPageSentenceThree.Text = pageSentenceThree;
+            string path;
+            switch(Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                    break;
+                case Device.UWP:
+                    path = "Images/" + pageWord.ToLower() + ".jpg";
+                    break;
+                case Device.Android:
+                    path = "Resources/drawable/" + pageWord.ToLower() + ".jpg";
+                    WordPageImage.Source = path;
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
