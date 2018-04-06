@@ -106,5 +106,11 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\applegif.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\circle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\circlegif.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
