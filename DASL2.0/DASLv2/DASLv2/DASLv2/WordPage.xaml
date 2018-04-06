@@ -26,25 +26,20 @@
                         FontSize="Large"
                         TextColor="White"/>
             </Frame>
+  
             <Image x:Name="WordPageImage"
                    Source="{Binding}" />
 
-            <!-- <Image>
-                <Image.Source>
-                    <OnPlatform x:TypeArguments="ImageSource">
-                        <On Platform="iOS">
-                            <FileImageSource File="" />
-                        </On>
-                        <On Platform="Android">
-                            <FileImageSource File="Resources/drawable/apple.jpg" />
-                        </On>
-                        <On Platform="UWP">
-                            <FileImageSource File="Images/apple.jpg" />
-                        </On>
-                    </OnPlatform>
-                </Image.Source>
-            </Image>
-            -->
+            <Frame BackgroundColor="DarkGray">
+                <Label  Text="{Binding}"
+                        x:Name="WordPageSign"
+                        HorizontalOptions="CenterAndExpand"
+                        FontSize="Large"
+                        TextColor="White"/>
+            </Frame>
+            <Image x:Name="WordPageGif"
+                   Source="{Binding}" />
+
             <Frame BackgroundColor="DarkGray">
                 <Label  Text="Definition"
                         FontSize="Large" 
@@ -54,6 +49,18 @@
             <Frame BackgroundColor="LightGray">
                 <Label Text="{Binding}" 
                     x:Name="WordPageDefinition"
+                    HorizontalOptions="CenterAndExpand" />
+            </Frame>
+
+            <Frame BackgroundColor="DarkGray">
+                <Label  Text="Part of Speech"
+                        FontSize="Large" 
+                        TextColor="White" 
+                        XAlign="Center"/>
+            </Frame>
+            <Frame BackgroundColor="LightGray">
+                <Label Text="{Binding}" 
+                    x:Name="WordPagePartOfSpeech"
                     HorizontalOptions="CenterAndExpand" />
             </Frame>
 
@@ -80,27 +87,6 @@
                         HorizontalOptions="CenterAndExpand" />
             </Frame>
 
-            <Image x:Name="WordPageGif"
-                   Source="{Binding}" />
-
-            <!--
-            <Image>
-                <Image.Source>
-                    <OnPlatform x:TypeArguments="ImageSource">
-                        <On Platform="iOS">
-                            <FileImageSource File="" />
-                        </On>
-                        <On Platform="Android">
-                            <FileImageSource File="Resources/drawable/applegif.gif" />
-                        </On>
-                        <On Platform="UWP">
-                            <FileImageSource File="Images/applegif.gif" />
-                        </On>
-                    </OnPlatform>
-                </Image.Source>
-            </Image>
-            -->
-            
             <Label Text="Made by Purdue EPICS in Conjunction with ISD" 
                x:Name="WordPageInfo"
                FontSize="8" 

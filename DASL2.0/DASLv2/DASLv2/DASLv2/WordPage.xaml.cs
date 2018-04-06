@@ -23,8 +23,9 @@ namespace DASLv2
             WordPageTitle.Text = pageName;
             WordPageWord.Text = pageWord;
         }
-        public WordPage(string pageName, string pageWord, string pageDefinition, string pageSentenceOne, string pageSentenceTwo, string pageSentenceThree)
+        public WordPage(string pageName, string pageWord, string pageDefinition, string partOfSpeech, string pageSentenceOne, string pageSentenceTwo, string pageSentenceThree)
         {
+            string sign;
             InitializeComponent();
             WordPageTitle.Text = pageName;
             WordPageWord.Text = pageWord;
@@ -32,6 +33,9 @@ namespace DASLv2
             WordPageSentenceOne.Text = pageSentenceOne;
             WordPageSentenceTwo.Text = pageSentenceTwo;
             WordPageSentenceThree.Text = pageSentenceThree;
+            WordPagePartOfSpeech.Text = partOfSpeech;
+            sign = "Sign of " + pageWord;
+            WordPageSign.Text = sign;
             string path, gifpath;
             switch(Device.RuntimePlatform)
             {
