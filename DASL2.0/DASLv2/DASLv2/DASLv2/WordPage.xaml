@@ -24,7 +24,7 @@
                         x:Name="WordPageWord"
                         HorizontalOptions="CenterAndExpand"
                         FontSize="Large"
-                        TextColor="DarkOrange"/>
+                        TextColor="White"/>
             </Frame>
             <Image>
                 <Image.Source>
@@ -45,7 +45,7 @@
             <Frame BackgroundColor="DarkGray">
                 <Label  Text="Definition"
                         FontSize="Large" 
-                        TextColor="DarkOrange" 
+                        TextColor="White" 
                         XAlign="Center"/>
             </Frame>
             <Frame BackgroundColor="LightGray">
@@ -58,7 +58,7 @@
 
                 <Label  Text="Example Sentences"
                         FontSize="Large" 
-                        TextColor="DarkOrange" 
+                        TextColor="White" 
                         XAlign="Center"/>
             </Frame>
             <Frame BackgroundColor="LightGray">
