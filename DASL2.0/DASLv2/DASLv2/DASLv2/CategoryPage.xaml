@@ -13,29 +13,16 @@
             HorizontalOptions="CenterAndExpand" >
         </Label>
         <ScrollView>
-            <ListView x:Name="CategoryListView" ItemSelected="CategorySelected" />
-            <!-- <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <local:CustomCell Name="{Binding Name}" Text="{Binding Name}" />
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-             </ListView> -->
-            <!--<ListView x:Name="CategoryListView" ItemSelected="CategorySelected">
+            <!--<ListView x:Name="CategoryListView" ItemSelected="CategorySelected" />-->
+            <ListView ItemsSource="{x:Static local:PageDataViewModel.All}"
+              ItemSelected="OnListViewItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Vertical">
-                                <StackLayout Orientation="Horizontal">
-                                    <Image Source="{Binding image}" />
-                                    <Label Text="{Binding title}" TextColor="#f35e20" />
-                                </StackLayout>
-                            </StackLayout>
-                        </ViewCell>
+                        <TextCell Text="{Binding Title}"
+                          Detail="{Binding Description}" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView> -->
-            <!-- IsPullToRefreshEnabled="true" 
-                      Refreshing="CategoryRefresh"/> -->
+            </ListView>
         </ScrollView>
     </StackLayout>
 </ContentPage>
