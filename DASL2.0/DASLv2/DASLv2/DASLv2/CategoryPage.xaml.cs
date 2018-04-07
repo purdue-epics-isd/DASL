@@ -44,36 +44,20 @@ namespace DASLv2
 
             //give all categories that are 1 level below the given category
             //static List<String> getSubCategories(string category);
+
             List<string> cats = Category.GetSubCategories(e.SelectedItem.ToString());
-            Debug.WriteLine("---------- " + cats.Count);
             int i = cats.Count();
             List<string> newList;
+
             if (i == 0)
             {
                 newList = Category.GetWordNamesFromCategory(e.SelectedItem.ToString());
-                /*newList = new List<string> {
-                "Zenyatta",
-                "Moira",
-                "Lucio",
-                "Torbjorn",
-                "Pharah"
-            };*/
             }
             else
             {
                 newList = cats;
-                /*
-                                newList = new List<string> {
-                                "Han Solo",
-                                "Luke Skywalker",
-                                "Leia Skywalker",
-                                "Anakin Skywalker",
-                                "Obi-Wan Kenobi",
-                                "Ahsoka Tano"
-                                };
-                */
             }
-            Debug.WriteLine("opening new cat page "+newList.Count);
+
             if (isWordPage)
             {
                 await Navigation.PushAsync(new WordPage(e.SelectedItem.ToString(), "This Worked"));
