@@ -18,8 +18,11 @@
               ItemSelected="OnListViewItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
+                        <!--
                         <TextCell Text="{Binding Title}"
-                          Detail="{Binding Description}" />
+                          Detail="{Binding Description}" />-->
+                        <ImageCell ImageSource="{Binding Image}"
+                          Text="{Binding Text}" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

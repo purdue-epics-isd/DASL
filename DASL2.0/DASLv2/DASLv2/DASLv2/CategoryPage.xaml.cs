@@ -15,28 +15,29 @@ namespace DASLv2
 
     public class PageDataViewModel
     {
-        public PageDataViewModel(Type type, string title, string description)
+        public PageDataViewModel(Type type, string image, string text)
         {
             Type = type;
-            Title = title;
-            Description = description;
+            Image = image;
+            Text = text;
         }
 
         public Type Type { private set; get; }
 
-        public string Title { private set; get; }
+        public string Image { private set; get; }
 
-        public string Description { private set; get; }
+        public string Text { private set; get; }
 
         static PageDataViewModel()
         {
             All = new List<PageDataViewModel>
         {
             // Part 1. Getting Started with XAML
-            new PageDataViewModel(typeof(CategoryPage), "Hello, XAML",
+            new PageDataViewModel(typeof(CategoryPage), "Images/applethumb.jpg",
                                   "Display a Label with many properties set"),
 
-            new PageDataViewModel(typeof(WordPage), "XAML + Code",
+            new PageDataViewModel(typeof(WordPage), "Images/circlethumb.jpg",
+            //new PageDataViewModel(typeof(WordPage), "Images/appleThumb.jpg",
                                   "Interact with a Slider and Button"),
 /*
             // Part 2. Essential XAML Syntax
