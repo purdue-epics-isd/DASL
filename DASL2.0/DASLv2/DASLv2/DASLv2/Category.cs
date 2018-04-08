@@ -19,22 +19,17 @@ namespace DASLv2
                 exists = false;
                 foreach(string cat in categories)
                 {
-                    //Debug.WriteLine("Comparing " + word.RootCategory  + " to " + cat);
-                    if(String.Equals(word.RootCategory,cat))
+                    if(String.Equals(word.RootCategory.Trim(),cat))
                     {
-                        Debug.WriteLine("exists");
                         exists = true;
                         break;
                     }
                 }
-                //Debug.WriteLine(""+exists);
                 if(exists == false)
                 {
-                  //  Debug.WriteLine("Adding category " + word.RootCategory);
-                    categories.Add(word.RootCategory);
+                    categories.Add(word.RootCategory.Trim());
                 }
             }
-            //Debug.WriteLine("");
             return categories;
         }
 
@@ -43,8 +38,7 @@ namespace DASLv2
             List<string> categories;
             try
             {
-                Debug.WriteLine("Getting sub categories for [" + root + "]");
-                var words = GetWordsFromRootCategory(root);
+                List<Word> words = GetWordsFromRootCategory(root);
                 categories = new List<string>();
                 bool exists = false;
 
@@ -53,7 +47,7 @@ namespace DASLv2
                     exists = false;
                     foreach (string cat in categories)
                     {
-                        if (String.Equals(word.SubCategory, cat))
+                        if (String.Equals(word.SubCategory.Trim(), cat))
                         {
                             exists = true;
                             break;
@@ -62,18 +56,14 @@ namespace DASLv2
 
                     if (exists == false)
                     {
-                        categories.Add(word.SubCategory);
+                        categories.Add(word.SubCategory.Trim());
                     }
                 }
-                Debug.WriteLine("cat returned " + categories.Count);
                 return categories;
-            } catch {
-                return new List<string>
-                {
-                    "Word A",
-                    "Word B",
-                    "Word C"
-                };
+            }
+            catch
+            {
+                return new List<string>();
             } 
         }
 
@@ -85,14 +75,11 @@ namespace DASLv2
 
             foreach (Word word in words)
             {
-                if (word.RootCategory.Equals(category))
+                if (String.Equals(word.RootCategory.Trim(), category))
                 {
                     wordsInCat.Add(word);
                 }
             }
-
-            wordsInCat.Sort();
-
             return wordsInCat;
         }
 
@@ -103,9 +90,9 @@ namespace DASLv2
 
             foreach (Word word in words)
             {
-                if(word.SubCategory.Equals(category))
+                if(String.Equals(word.SubCategory.Trim(), category))
                 {
-                    wordsInCat.Add(word.Name);
+                    wordsInCat.Add(word.Name.Trim());
                 }
             }
 
