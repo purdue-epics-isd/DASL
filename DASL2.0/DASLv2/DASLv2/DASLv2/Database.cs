@@ -79,7 +79,7 @@ namespace DASLv2
             var words = GetAllWords();
             foreach (Word word in words)
             {
-                if (word.Name.Trim().Equals(name))
+                if (String.Equals(name.Trim().ToLower(), word.Name.Trim().ToLower()))
                 {
                     return word;
                 }

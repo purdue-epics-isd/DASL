@@ -32,11 +32,11 @@ namespace DASLv2
         {
             All = new List<PageDataViewModel>
         {
-/*
             new PageDataViewModel(typeof(CategoryPage), "Images/circlethumb.jpg",
             //new PageDataViewModel(typeof(WordPage), "Images/appleThumb.jpg",
                                   "Interact with a Slider and Button"),
 
+/*
             // Part 2. Essential XAML Syntax
             new PageDataViewModel(typeof(GridDemoPage), "Grid Demo",
                                   "Explore XAML syntax with the Grid"),
@@ -159,7 +159,7 @@ namespace DASLv2
 
                 if (isWordPage)
                 {
-                    page = (Page)Activator.CreateInstance(pageData.Type, "This Worked", "apple","","","","","");
+                    page = (Page)Activator.CreateInstance(pageData.Type, CategoryPageTitle.Text, name);
                     await Navigation.PushAsync(page);
                     //await Navigation.PushAsync(new WordPage(name, "This Worked"));
                 }

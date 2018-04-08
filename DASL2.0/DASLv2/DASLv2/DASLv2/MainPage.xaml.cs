@@ -31,13 +31,13 @@ namespace DASLv2
         }
         async void OnWOTD(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new WordPage("Word of the Day", "Apple", "A fruit that comes from a tree", "Noun", "The apple was yummy", "Apples are a good source of fiber", "Joe likes granny apples"));
-            
+            //await Navigation.PushAsync(new WordPage("Word of the Day", "Apple", "A fruit that comes from a tree", "Noun", "The apple was yummy", "Apples are a good source of fiber", "Joe likes granny apples"));
+            await Navigation.PushAsync(new WordPage("Word of the Day", "Sink"));
+
         }
         async void OnWOTW(object sender, EventArgs e)
         {
-            Word theword = App.Dictionary.NameToWord("Circle");
-            await Navigation.PushAsync(new WordPage("Word of the Week", theword.Name, theword.Definition, theword.Speech, theword.Sentence1, theword.Sentence2, theword.Sentence3));
+            await Navigation.PushAsync(new WordPage("Word of the Week", "Circle"));
         }
 
 

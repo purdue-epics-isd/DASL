@@ -17,23 +17,25 @@ namespace DASLv2
 		{
             InitializeComponent ();
 		}
+/*
         public WordPage(string pageName, string pageWord)
         {
             InitializeComponent();
             WordPageTitle.Text = pageName;
             WordPageWord.Text = pageWord;
-        }
-        public WordPage(string pageName, string pageWord, string pageDefinition, string partOfSpeech, string pageSentenceOne, string pageSentenceTwo, string pageSentenceThree)
+        }*/
+        public WordPage(string pageName, string pageWord)
         {
             string sign;
+            Word word = App.Dictionary.NameToWord(pageWord);
             InitializeComponent();
-            WordPageTitle.Text = pageName;
-            WordPageWord.Text = pageWord;
-            WordPageDefinition.Text = pageDefinition;
-            WordPageSentenceOne.Text = pageSentenceOne;
-            WordPageSentenceTwo.Text = pageSentenceTwo;
-            WordPageSentenceThree.Text = pageSentenceThree;
-            WordPagePartOfSpeech.Text = partOfSpeech;
+            WordPageTitle.Text = word.SubCategory;
+            WordPageWord.Text = word.Name;
+            WordPageDefinition.Text = word.Definition;
+            WordPageSentenceOne.Text = word.Sentence1;
+            WordPageSentenceTwo.Text = word.Sentence2;
+            WordPageSentenceThree.Text = word.Sentence3;
+            WordPagePartOfSpeech.Text = word.Speech;
             sign = "Sign of " + pageWord;
             WordPageSign.Text = sign;
             string path, gifpath;
