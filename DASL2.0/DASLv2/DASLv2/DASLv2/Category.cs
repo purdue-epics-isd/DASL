@@ -47,7 +47,7 @@ namespace DASLv2
                     exists = false;
                     foreach (string cat in categories)
                     {
-                        if (String.Equals(word.SubCategory.Trim(), cat))
+                        if (String.Equals(word.SubCategory.Trim().ToLower(), cat.Trim().ToLower()))
                         {
                             exists = true;
                             break;
@@ -75,7 +75,7 @@ namespace DASLv2
 
             foreach (Word word in words)
             {
-                if (String.Equals(word.RootCategory.Trim(), category))
+                if (String.Equals(word.RootCategory.Trim().ToLower(), category.Trim().ToLower()))
                 {
                     wordsInCat.Add(word);
                 }
@@ -90,7 +90,7 @@ namespace DASLv2
 
             foreach (Word word in words)
             {
-                if(String.Equals(word.SubCategory.Trim(), category))
+                if(String.Equals(word.SubCategory.Trim().ToLower(), category.Trim().ToLower()))
                 {
                     wordsInCat.Add(word.Name.Trim());
                 }

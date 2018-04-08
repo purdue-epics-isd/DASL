@@ -32,14 +32,11 @@ namespace DASLv2
         {
             All = new List<PageDataViewModel>
         {
-            // Part 1. Getting Started with XAML
-            new PageDataViewModel(typeof(CategoryPage), "Images/applethumb.jpg",
-                                  "Display a Label with many properties set"),
-
-            new PageDataViewModel(typeof(WordPage), "Images/circlethumb.jpg",
+/*
+            new PageDataViewModel(typeof(CategoryPage), "Images/circlethumb.jpg",
             //new PageDataViewModel(typeof(WordPage), "Images/appleThumb.jpg",
                                   "Interact with a Slider and Button"),
-/*
+
             // Part 2. Essential XAML Syntax
             new PageDataViewModel(typeof(GridDemoPage), "Grid Demo",
                                   "Explore XAML syntax with the Grid"),
@@ -89,6 +86,7 @@ namespace DASLv2
     {
         //public static int i = 0; //Change to non static once backend is done.
         public bool isWordPage = false;
+        public IList<PageDataViewModel> myAll;
         public CategoryPage()
         {
             InitializeComponent();
@@ -96,7 +94,29 @@ namespace DASLv2
         public CategoryPage(string name, List<string> items, bool isWordPage)
         {
             InitializeComponent();
-            CategoryPageTitle.Text = name;
+
+            // Part 1. Getting Started with XAML
+            PageDataViewModel.All.Clear();
+            myAll = new List<PageDataViewModel>();
+            if (!isWordPage) { 
+                foreach (string str in items)
+                {
+                    PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim() + "thumb.jpg", str));
+                    myAll.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim() + "thumb.jpg", str));
+                }
+            } else
+            {
+                foreach (string str in items)
+                {
+                    PageDataViewModel.All.Add(new PageDataViewModel(typeof(WordPage), "Images/" + str.ToLower().Trim() + "thumb.jpg", str));
+                    myAll.Add(new PageDataViewModel(typeof(WordPage), "Images/" + str.ToLower().Trim() + "thumb.jpg", str));
+                }
+            }
+            //myAll = PageDataViewModel.All;
+                        // PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "Images/applethumb.jpg",
+                        //                     "Display a Label with many properties set"));
+
+                        CategoryPageTitle.Text = name;
             //CategoryListView.ItemsSource = items;
             this.isWordPage = isWordPage;
             //i++;
@@ -107,6 +127,15 @@ namespace DASLv2
             DisplayAlert("Item Tapped", e.Item.ToString(), "Ok");
         }*/
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            PageDataViewModel.All.Clear();
+            foreach (var item in this.myAll) {
+                PageDataViewModel.All.Add(item);
+            }
+        }
+
         private async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
             (sender as ListView).SelectedItem = null;
@@ -114,8 +143,44 @@ namespace DASLv2
             if (args.SelectedItem != null)
             {
                 PageDataViewModel pageData = args.SelectedItem as PageDataViewModel;
-                Page page = (Page)Activator.CreateInstance(pageData.Type);
-                await Navigation.PushAsync(page);
+                string name = pageData.Text.ToLower().Trim();
+                List<string> cats = Category.GetSubCategories(name);
+                int i = cats.Count();
+                List<string> newList;
+                Page page;
+                if (i == 0)
+                {
+                    newList = Category.GetWordNamesFromCategory(name);
+                }
+                else
+                {
+                    newList = cats;
+                }
+
+                if (isWordPage)
+                {
+                    page = (Page)Activator.CreateInstance(pageData.Type, "This Worked", "apple","","","","","");
+                    await Navigation.PushAsync(page);
+                    //await Navigation.PushAsync(new WordPage(name, "This Worked"));
+                }
+                else if (i == 0)
+                {
+                    page = (Page)Activator.CreateInstance(pageData.Type, name,newList,true);
+                    await Navigation.PushAsync(page);
+                    //await Navigation.PushAsync(new CategoryPage(name, newList, true));
+                }
+                else
+                {
+                    page = (Page)Activator.CreateInstance(pageData.Type, name, newList, false);
+                    await Navigation.PushAsync(page);
+                    //await Navigation.PushAsync(new CategoryPage(name, newList, false));
+                }
+                //
+                //comment out if you want to keep selections
+                ListView lst = (ListView)sender;
+                lst.SelectedItem = null;
+                //page = (Page)Activator.CreateInstance(pageData.Type);
+                //await Navigation.PushAsync(page);
             }
         }
 
