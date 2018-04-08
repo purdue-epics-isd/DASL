@@ -22,7 +22,9 @@ namespace DASLv2.Droid
 
             Instance = this;
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App());
+
+            string dbPath = FileAccessHelper.GetLocalFilePath("dbTest1.db3");
+            LoadApplication(new App(dbPath));
         }
     }
 }
