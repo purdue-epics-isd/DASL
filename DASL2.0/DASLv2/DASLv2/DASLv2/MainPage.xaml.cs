@@ -32,12 +32,12 @@ namespace DASLv2
         async void OnWOTD(object sender, EventArgs e)
         {
             //await Navigation.PushAsync(new WordPage("Word of the Day", "Apple", "A fruit that comes from a tree", "Noun", "The apple was yummy", "Apples are a good source of fiber", "Joe likes granny apples"));
-            await Navigation.PushAsync(new WordPage("Word of the Day", "Sink"));
+            await Navigation.PushAsync(new WordPage("Word of the Day", "Circle"));
 
         }
         async void OnWOTW(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new WordPage("Word of the Week", "Circle"));
+            await Navigation.PushAsync(new WordPage("Word of the Week", "Sink"));
         }
 
 

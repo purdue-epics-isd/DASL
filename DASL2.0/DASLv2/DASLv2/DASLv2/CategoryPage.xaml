@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DASLv2.CategoryPage"
              xmlns:local="clr-namespace:DASLv2;assembly=DASLv2">
-    <ContentPage.Padding>
+    <!-- <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness">
             <On Platform="iOS" Value="20, 40, 20, 20" />
             <On Platform="Android, UWP" Value="20" />
         </OnPlatform>
-    </ContentPage.Padding>
+    </ContentPage.Padding> -->
     <StackLayout>
         <Label Text="{Binding}"
             x:Name="CategoryPageTitle"

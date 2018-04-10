@@ -121,8 +121,10 @@
     <Content Include="Images\beautiful.jpg" />
     <Content Include="Images\beautifulthumb.jpg" />
     <Content Include="Images\bed.jpg" />
+    <Content Include="Images\bedgif.gif" />
     <Content Include="Images\bedthumb.jpg" />
     <Content Include="Images\bird.jpg" />
+    <Content Include="Images\birdgif.gif" />
     <Content Include="Images\birdthumb.jpg" />
     <Content Include="Images\blue.jpg" />
     <Content Include="Images\bluethumb.jpg" />
@@ -136,6 +138,7 @@
     <Content Include="Images\catthumb.jpg" />
     <Content Include="Images\chairs.jpg" />
     <Content Include="Images\chairsthumb.jpg" />
+    <Content Include="Images\charisgif.gif" />
     <Content Include="Images\chicken.jpg" />
     <Content Include="Images\chickengif.gif" />
     <Content Include="Images\chickenmeat.jpg" />
@@ -146,10 +149,12 @@
     <Content Include="Images\circlegif.gif" />
     <Content Include="Images\circlethumb.jpg" />
     <Content Include="Images\closet.jpg" />
+    <Content Include="Images\closetgif.gif" />
     <Content Include="Images\closetthumb.jpg" />
     <Content Include="Images\colorful.jpg" />
     <Content Include="Images\colorfulthumb.jpg" />
     <Content Include="Images\couch.jpg" />
+    <Content Include="Images\couchgif.gif" />
     <Content Include="Images\couchthumb.jpg" />
     <Content Include="Images\cow.jpg" />
     <Content Include="Images\cowgif.gif" />
@@ -161,6 +166,7 @@
     <Content Include="Images\deergif.gif" />
     <Content Include="Images\deerthumb.jpg" />
     <Content Include="Images\detergent.jpg" />
+    <Content Include="Images\detergentgif.gif" />
     <Content Include="Images\detergentthumb.jpg" />
     <Content Include="Images\dinner.jpg" />
     <Content Include="Images\dinnergif.gif" />
@@ -174,8 +180,10 @@
     <Content Include="Images\dolphingif.gif" />
     <Content Include="Images\dolphinthumb.jpg" />
     <Content Include="Images\dresser.jpg" />
+    <Content Include="Images\dressergif.gif" />
     <Content Include="Images\dresserthumb.jpg" />
     <Content Include="Images\dryer.jpg" />
+    <Content Include="Images\dryergif.gif" />
     <Content Include="Images\dryerthumb.jpg" />
     <Content Include="Images\fish.jpg" />
     <Content Include="Images\fishgif.gif" />
@@ -183,6 +191,7 @@
     <Content Include="Images\important.jpg" />
     <Content Include="Images\importantthumb.jpg" />
     <Content Include="Images\microwave.jpg" />
+    <Content Include="Images\microwavegif.gif" />
     <Content Include="Images\microwavethumb.jpg" />
     <Content Include="Images\muscular.jpg" />
     <Content Include="Images\muscularthumb.jpg" />
@@ -192,6 +201,7 @@
     <Content Include="Images\purple.jpg" />
     <Content Include="Images\purplethumb.jpg" />
     <Content Include="Images\sink.jpg" />
+    <Content Include="Images\sinkgif.gif" />
     <Content Include="Images\sinkthumb.jpg" />
     <Content Include="Images\soda.jpg" />
     <Content Include="Images\sodagif.gif" />
@@ -200,13 +210,16 @@
     <Content Include="Images\squarethumb.jpg" />
     <Content Include="Images\starwarslogo.svg" />
     <Content Include="Images\table.jpg" />
+    <Content Include="Images\tablegif.gif" />
     <Content Include="Images\tablethumb.jpg" />
     <Content Include="Images\television.jpg" />
+    <Content Include="Images\televisiongif.gif" />
     <Content Include="Images\televisionthumb.jpg" />
     <Content Include="Images\tomato.gif" />
     <Content Include="Images\tomato.jpg" />
     <Content Include="Images\tomatothumb.jpg" />
     <Content Include="Images\washer.jpg" />
+    <Content Include="Images\washergif.gif" />
     <Content Include="Images\washerthumb.jpg" />
     <Content Include="Images\water.jpg" />
     <Content Include="Images\watergif.gif" />
