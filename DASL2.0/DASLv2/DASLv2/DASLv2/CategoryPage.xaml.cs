@@ -101,15 +101,15 @@ namespace DASLv2
             if (!isWordPage) { 
                 foreach (string str in items)
                 {
-                    PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim() + "thumb.jpg", str));
-                    myAll.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim() + "thumb.jpg", str));
+                    PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim().Replace("  ", "") + "thumb.jpg", str));
+                    myAll.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim().Replace("  ", "") + "thumb.jpg", str));
                 }
             } else
             {
                 foreach (string str in items)
                 {
-                    PageDataViewModel.All.Add(new PageDataViewModel(typeof(WordPage), "Images/" + str.ToLower().Trim() + "thumb.jpg", str));
-                    myAll.Add(new PageDataViewModel(typeof(WordPage), "Images/" + str.ToLower().Trim() + "thumb.jpg", str));
+                    PageDataViewModel.All.Add(new PageDataViewModel(typeof(WordPage), "Images/" + str.ToLower().Trim().Replace("  ", "") + "thumb.jpg", str));
+                    myAll.Add(new PageDataViewModel(typeof(WordPage), "Images/" + str.ToLower().Trim().Replace("  ", "") + "thumb.jpg", str));
                 }
             }
             //myAll = PageDataViewModel.All;
