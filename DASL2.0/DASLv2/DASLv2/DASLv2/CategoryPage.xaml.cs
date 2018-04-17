@@ -98,13 +98,16 @@ namespace DASLv2
             // Part 1. Getting Started with XAML
             PageDataViewModel.All.Clear();
             myAll = new List<PageDataViewModel>();
-            if (!isWordPage) { 
+            items.Sort();
+            if (!isWordPage)
+            {
                 foreach (string str in items)
                 {
                     PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim().Replace("  ", "") + "thumb.jpg", str));
                     myAll.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim().Replace("  ", "") + "thumb.jpg", str));
                 }
-            } else
+            }
+            else
             {
                 foreach (string str in items)
                 {
@@ -113,10 +116,10 @@ namespace DASLv2
                 }
             }
             //myAll = PageDataViewModel.All;
-                        // PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "Images/applethumb.jpg",
-                        //                     "Display a Label with many properties set"));
+            // PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "Images/applethumb.jpg",
+            //                     "Display a Label with many properties set"));
 
-                        CategoryPageTitle.Text = name;
+            CategoryPageTitle.Text = name;
             //CategoryListView.ItemsSource = items;
             this.isWordPage = isWordPage;
             //i++;
@@ -131,7 +134,8 @@ namespace DASLv2
         {
             base.OnAppearing();
             PageDataViewModel.All.Clear();
-            foreach (var item in this.myAll) {
+            foreach (var item in this.myAll)
+            {
                 PageDataViewModel.All.Add(item);
             }
         }
@@ -165,7 +169,7 @@ namespace DASLv2
                 }
                 else if (i == 0)
                 {
-                    page = (Page)Activator.CreateInstance(pageData.Type, name,newList,true);
+                    page = (Page)Activator.CreateInstance(pageData.Type, name, newList, true);
                     await Navigation.PushAsync(page);
                     //await Navigation.PushAsync(new CategoryPage(name, newList, true));
                 }
