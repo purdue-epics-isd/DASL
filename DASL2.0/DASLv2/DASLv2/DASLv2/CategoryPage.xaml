@@ -10,28 +10,30 @@
         </OnPlatform>
     </ContentPage.Padding>
     <StackLayout>
-        <Label Text="{Binding}"
+        <Frame BackgroundColor="Black">
+            <Label Text="{Binding}"
             x:Name="CategoryPageTitle"
             VerticalOptions="Center"
             FontSize="Large" 
             TextColor="Orange" 
             XAlign="Center"
             HorizontalOptions="CenterAndExpand" >
-        </Label>
-        <ScrollView>
+            </Label>
+        </Frame>
+
+        <ScrollView BackgroundColor="AntiqueWhite">
             <!--<ListView x:Name="CategoryListView" ItemSelected="CategorySelected" />-->
             <ListView ItemsSource="{x:Static local:PageDataViewModel.All}"
               ItemSelected="OnListViewItemSelected"
               HorizontalOptions="Center">    
-
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <!--
                         <TextCell Text="{Binding Title}"
                           Detail="{Binding Description}" />-->
-                        <ImageCell ImageSource="{Binding Image}"
-                          Text="{Binding Text}"
-                          />
+                        <ImageCell  ImageSource="{Binding Image}"
+                                    Text="{Binding Text}"
+                        />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
