@@ -36,7 +36,7 @@ namespace DASLv2
             WordPageSentenceTwo.Text = word.Sentence2;
             WordPageSentenceThree.Text = word.Sentence3;
             WordPagePartOfSpeech.Text = word.Speech;
-            sign = "Sign of " + pageWord;
+            sign = "Sign of " + word.Name;
             WordPageSign.Text = sign;
             string path, gifpath;
             switch(Device.RuntimePlatform)
