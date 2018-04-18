@@ -96,6 +96,7 @@ namespace DASLv2
             InitializeComponent();
 
             // Part 1. Getting Started with XAML
+            int i = 0;
             PageDataViewModel.All.Clear();
             myAll = new List<PageDataViewModel>();
             items.Sort();
@@ -103,16 +104,28 @@ namespace DASLv2
             {
                 foreach (string str in items)
                 {
-                    PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim().Replace("  ", "") + "thumb.jpg", str));
-                    myAll.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim().Replace("  ", "") + "thumb.jpg", str));
+                    if (i++ == 0)
+                    {
+                        PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "_", "\t"));
+                        myAll.Add(new PageDataViewModel(typeof(CategoryPage), "_","\t"));
+                        continue;
+                    }
+                    PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim().Replace(" ", "").Replace(@"'","").Replace("?","") + "thumb.jpg", str));
+                    myAll.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim().Replace(" ", "").Replace(@"'", "").Replace("?", "") + "thumb.jpg", str));
                 }
             }
             else
             {
                 foreach (string str in items)
                 {
-                    PageDataViewModel.All.Add(new PageDataViewModel(typeof(WordPage), "Images/" + str.ToLower().Trim().Replace("  ", "") + "thumb.jpg", str));
-                    myAll.Add(new PageDataViewModel(typeof(WordPage), "Images/" + str.ToLower().Trim().Replace("  ", "") + "thumb.jpg", str));
+                    if (i++ == 0)
+                    {
+                        PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "_", "\t"));
+                        myAll.Add(new PageDataViewModel(typeof(CategoryPage), "_", "\t"));
+                        continue;
+                    }
+                    PageDataViewModel.All.Add(new PageDataViewModel(typeof(WordPage), "Images/" + str.ToLower().Trim().Replace(" ", "").Replace(@"'", "").Replace("?", "") + "thumb.jpg", str));
+                    myAll.Add(new PageDataViewModel(typeof(WordPage), "Images/" + str.ToLower().Trim().Replace(" ", "").Replace(@"'", "").Replace("?", "") + "thumb.jpg", str));
                 }
             }
             //myAll = PageDataViewModel.All;
