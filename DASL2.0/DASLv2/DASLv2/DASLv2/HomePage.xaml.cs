@@ -18,7 +18,7 @@ namespace DASLv2
             var navigationPage = new NavigationPage(new DASLv2.MainPage());
             navigationPage.Title = "Navigation";
             var settingsPage = new SettingsPage(); //Change to Profile settings page when zeeshan gives it to us
-            settingsPage.Title = "Settings";
+            settingsPage.Title = "Profile";
             var addWordPage = new AddWordPage(); //Change to Profile settings page when zeeshan gives it to us
             addWordPage.Title = "Add Word";
             Children.Add(navigationPage);

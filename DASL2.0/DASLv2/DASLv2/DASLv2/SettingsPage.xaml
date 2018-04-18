@@ -8,12 +8,52 @@
             <On Platform="Android, UWP" Value="20" />
         </OnPlatform>
     </ContentPage.Padding> -->
-    <ContentPage.Content>
+    <ScrollView>
         <StackLayout>
-            <Label Text="Settings Functionality Still Under Development"
-                   FontSize="50"
-                   TextColor="Red"
+            <Frame BackgroundColor="Black" >
+                <Label Text="Profile"
+                   FontSize="Large"
+                   TextColor="Orange"
                    HorizontalOptions="Center"/>
+            </Frame>
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Caleb Withers"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+            <Image x:Name="WordPageImage"
+                Source="Images/profilepicture.jpg" />
+      
+
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Theme"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+            <Picker x:Name="ThemePicker" SelectedIndex="{Binding Theme}" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>Official Purdue</x:String>
+                    <x:String>Emerald Green</x:String>
+                    <x:String>Volcanic Red</x:String>
+                    <x:String>Sky Blue</x:String>
+                </Picker.Items>
+            </Picker>
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Reading Level"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+            <Picker x:Name="ReadingPicker" SelectedIndex="{Binding Theme}" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                </Picker.Items>
+            </Picker>
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

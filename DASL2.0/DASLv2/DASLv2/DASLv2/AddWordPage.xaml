@@ -8,12 +8,97 @@
             <On Platform="Android, UWP" Value="20" />
         </OnPlatform>
     </ContentPage.Padding>-->
-    <ContentPage.Content>
+    <ScrollView>
         <StackLayout>
-            <Label Text="Add Word Functionality Still Under Development"
-                   FontSize="50"
-                   TextColor="Red"
+            <Frame BackgroundColor="Black"
+                   >
+                <Label Text="Add Word"
+                   FontSize="Large"
+                   TextColor="Orange"
                    HorizontalOptions="Center"/>
+            </Frame>
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Main Category"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+            <Picker x:Name="MainPicker" SelectedIndex="{Binding Theme}" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>Official Purdue</x:String>
+                    <x:String>Emerald Green</x:String>
+                    <x:String>Volcanic Red</x:String>
+                    <x:String>Sky Blue</x:String>
+                </Picker.Items>
+            </Picker>
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Sub Category"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+            <Picker x:Name="SubPicker" SelectedIndex="{Binding Theme}" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                </Picker.Items>
+            </Picker>
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Word"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+            
+            <Editor Text="" BackgroundColor="LightGray"/>
+
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Definition"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+
+            <Editor Text="" BackgroundColor="LightGray"/>
+            
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Part of Speech"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+
+            <Editor Text="" BackgroundColor="LightGray"/>
+
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Senctence One"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+
+            <Editor Text="" BackgroundColor="LightGray"/>
+
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Senctence Two"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+
+            <Editor Text="" BackgroundColor="LightGray"/>
+
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Senctence Three"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+
+            <Editor Text="" BackgroundColor="LightGray"/>
+
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

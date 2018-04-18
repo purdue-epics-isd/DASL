@@ -213,6 +213,7 @@
     <Content Include="Images\pork.jpg" />
     <Content Include="Images\porkgif.gif" />
     <Content Include="Images\porkthumb.jpg" />
+    <Content Include="Images\profilepicture.jpg" />
     <Content Include="Images\purple.jpg" />
     <Content Include="Images\purplethumb.jpg" />
     <Content Include="Images\questionsthumb.jpg" />
