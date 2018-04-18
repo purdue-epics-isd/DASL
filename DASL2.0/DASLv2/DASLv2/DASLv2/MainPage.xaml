@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DASLv2"
+             x:Class="DASLv2.MainPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20, 40, 20, 20" />
+            <On Platform="Android, WinPhone, Windows" Value="20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout VerticalOptions="FillAndExpand" 
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical" 
+                 Spacing="15">
+        <Label Text="ASL Dictionary" 
+               FontSize="Large" 
+               TextColor="Orange" 
+               XAlign="Center"/>
+        <Button x:Name="categories" 
+                Text="English Category Search" 
+                HeightRequest="50"
+                WidthRequest = "90" 
+                CornerRadius="10"
+                BorderColor= "Gray" 
+                FontSize = "12" 
+                Margin = "10"
+                Clicked="OnEnglishSearch"/>
+        <Button x:Name="wordOfTheDay" 
+                Text="Word of the Day" 
+                HeightRequest="50"
+                WidthRequest = "90" 
+                CornerRadius="10"
+                BorderColor = "Gray" 
+                FontSize = "12" 
+                Margin = "10"
+                Clicked="OnWOTD" />
+        <Button x:Name="wordOfTheWeek" 
+                Text="Word of the Week"
+                HeightRequest="50"
+                WidthRequest = "90" 
+                CornerRadius="10"
+                BorderColor = "Gray" 
+                FontSize = "12" 
+                Margin = "10"
+                Clicked="OnWOTW"/>
+    </StackLayout>
+
+</ContentPage>

@@ -9,16 +9,16 @@ using System.IO;
 namespace DASL
 {
 	public partial class App : Application
-	{
-        Database database = new Database();
-        
+	{   
         public App()
 		{
 			InitializeComponent();
 
 			SetMainPage();
 
-            database.InitUpdate();
+            Database.InitUpdate();
+
+            Database.TestDb();
 		}
 
 

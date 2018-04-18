@@ -3,37 +3,56 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using SQLite;
+using System.Linq;
+using System.Diagnostics;
 
 namespace DASL
 {
-    class Database
+    public static class Database
     {
         //path string for database
-        string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "dbTest.db3");
-        SQLiteConnection db;
+        static string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "dbTest.db3");
+        static SQLiteConnection db;
+        static StreamReader reader;
 
-        public Database()
+        static Database()
         {
             db = new SQLiteConnection(dbPath);
             db.CreateTable<Word>();
         }
 
-        public void AddWord(Word word)
+        public static void AddWord(Word word)
         {
             //Add word capability
             db.Insert(word);
+            //reader.Append(word.ToString);
             return;
         }
 
-        public void InitUpdate()
+        public static void InitUpdate()
         {
-            var reader = new StreamReader(File.OpenRead("DASL dictionary.csv"));
+            reader = new StreamReader(File.OpenRead("DASL dictionary.csv"));
             return;
         }
 
-        public void UpdateDatabase()
+        public static void UpdateDatabase()
         {
             //Used to update the databse with the online database
+        }
+
+        public static void TestDb()
+        {
+            Console.WriteLine("How do you do");
+
+            var table = db.Table<Word>();
+            string toCommand;
+
+            foreach(var item in table)
+            {
+                Word word = new Word(item.Name, item.Speech, item.Sentence, item.Category);
+                toCommand = word.ToString();
+                Debug.WriteLine(toCommand + "\n");
+            }
         }
     }
 }
