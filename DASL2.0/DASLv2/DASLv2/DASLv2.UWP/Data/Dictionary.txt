@@ -45,7 +45,7 @@ principal,noun,My principal has a big office.,The principal visited our class.,M
 student,noun,There are 26 students in my math class.,Students sit at desks.,The student took a test.,A person learning at a school.,People,School
 breakfast,noun,I forgot to eat breakfast.,I ate a bagel for breakfast.,Breakfast is the most important meal of the day.,A meal eaten in the morning.,Food,Meals
 dinner,noun,I eat dinner with my family.,We eat dinner after baseball practice.,I ate pizza for dinner.,A meal eaten in the evening.,Food,Meals
-apple,noun,The apple was very big.,I like to eat apples with honey.,Red apples are the best.,"A round and crispy fruit that can be red, green, or yellow.",Food,Fruits
+apple,noun,The apple was very big.,I like to eat apples with honey.,Red apples are the best.,A round and crispy fruit that can be red or green.,Food,Fruits
 banana,noun,The banana is not ripe enough to eat.,I took the peel off my banana.,Bananas are yellow and mushy.,A long yellow fruit that grows in bunches.,Food,Fruits
 cucumber,noun,She sliced the cucumber.,I do not like the taste of cucumber seeds.,Pickles are made from cucumbers.,A long green vegetable with thin skin.,Food,Vegetables
 tomato,noun,Her face turned as red as a tomato.,I eat pasta with tomato sauce.,Tomatos are used to make pizza.,A glossy red vegetable that has thick skin and lots of seeds.,Food,Vegetables
@@ -70,33 +70,33 @@ car,noun,I asked my mom if I could borrow the car.,Her car ran out of gas.,I wan
 bus,bus,The bus was crowded.,After school the bus took the students home.,The bus picked up the kids at the bus stop.,A large vehicle that transports passengers.,School,Transportation
 classroom,noun,The students went into the classroom.,The classroom was small.,All of the students sat in the classroom.,A room made up of students in a school or college.,School,Building
 school,noun,School starts at 7:50 am.,Tomorrow is the first day of school.,The school had a lot of students.,A place for teaching and learning.,School,Building
-California,noun,The capital of California is Sacramento.,California is a state on the west coast.,We went to California for spring break.,A state that is located on the west coast of the United States.,U.S States,
-Utah,noun,This summer my family went to Utah.,Utah is located in the western United States.,I went skiing in Utah over the break.,A state that is located in the western United States.,U.S States,
-Indiana,noun,I live in Indiana.,Indiana is in the midwest.,There are many cornfields in Indiana.,A state that is located in the midwestern United States.,U.S States,
-Wisconsin,noun,My grandparents are from Wisconsin.,My friend moved to Wisconsin.,Wisconsin is in the northern United States.,A state that is located in the northern United States.,U.S States,
-Ohio,noun,My cousins live in Ohio.,I went to Ohio for a soccer tournament.,Ohio is in the midwest.,A state that is located in the midwestern United States.,U.S States,
-New York,noun,Times Square is in New York.,He travled to New York.,New York has many broadway shows.,A state that is located in the eastern United States.,,
-Pennsylvania,noun,My grandparents have a house in Pennsylvania.,We visited family in Pennsylvania.,The capital of Pennsylvania is Harrisburg.,A state that is located in the eastern United States.,,
-Tennessee,noun,My friends went to Tennessee last week.,Tenessee has beautiful mountains.,I went sight seeing in Tennessee.,A state that is located in the southern United States.,,
-Florida,noun,We went to Florida to go to the beach.,Florida is where my aunt lives.,I travled to Florida last summer.,A state that is located in the southern United States.,,
-Alabama,noun,My brother lives in Alabama.,Alabama is in the south.,It is warm in Alabama.,A state that is located in the southern United States.,,
-morning,,,,,,Calender,Time of the Day
-afternoon,,,,,,Calender,Time of the Day
-Monday,,,,,,Calender,Day of the Week
-Thursday,,,,,,Calender,Day of the Week
-March,,,,,,Calender,Month of the Year
-July,,,,,,Calender,Month of the Year
-St. Patrick's Day,,,,,,Calender,Holidays
-Valentine's Day,,I bought choclates on Valentine's Day.,,,"The 14th of February, when people give small presents, chocolate candy, flowers, or cards to someone they admire or love.",Calender,Holidays
-spring,noun,Flowers bloom in spring.,I was born in spring of 2014.,Spring is my favourite season.,The season between winter and summer when plants begin to grow.,Calender,Seasons
-winter,noun,It can be very cold in the winter.,We spent winters in Canada.,Winters can be snowy.,"The coldest season of the year, between autumn, fall and spring.",Calender,Seasons
-bird,noun,A large bird flew over me.,We went to the park to feed the birds.,Birds fill nests.,"An animal with feathers and wings, usually able to fly.",Animals,Flying
-bat,noun,A bat feeds at night.,Bats like dark places.,Bats usually live in the caves.,"A small, flying animal with big ears and wings of skin.",Animals,Flying
-fish,noun,I caught a fish.,Fishes live under water.,I lost my Fish.,"A creature that lives in water, breathes through gills, and uses fins and a tail for swimming.",Animals,Underwater
+California,noun,The capital of California is Sacramento.,California is a state on the west coast.,We went to California for spring break.,A state that is located on the west coast of the United States.,U.S States,West
+Utah,noun,This summer my family went to Utah.,Utah is located in the western United States.,I went skiing in Utah over the break.,A state that is located in the western United States.,U.S States,West
+Indiana,noun,I live in Indiana.,Indiana is in the midwest.,There are many cornfields in Indiana.,A state that is located in the midwestern United States.,U.S States,Mid-West
+Wisconsin,noun,My grandparents are from Wisconsin.,My friend moved to Wisconsin.,Wisconsin is in the northern United States.,A state that is located in the northern United States.,U.S States,Mid-West
+Ohio,noun,My cousins live in Ohio.,I went to Ohio for a soccer tournament.,Ohio is in the midwest.,A state that is located in the midwestern United States.,U.S States,Mid-West
+New York,noun,Times Square is in New York.,He travled to New York.,New York has many broadway shows.,A state that is located in the eastern United States.,U.S States,North-East
+Pennsylvania,noun,My grandparents have a house in Pennsylvania.,We visited family in Pennsylvania.,The capital of Pennsylvania is Harrisburg.,A state that is located in the eastern United States.,U.S States,North-East
+Tennessee,noun,My friends went to Tennessee last week.,Tenessee has beautiful mountains.,I went sight seeing in Tennessee.,A state that is located in the southern United States.,U.S States,South
+Florida,noun,We went to Florida to go to the beach.,Florida is where my aunt lives.,I travled to Florida last summer.,A state that is located in the southern United States.,U.S States,South
+Alabama,noun,My brother lives in Alabama.,Alabama is in the south.,It is warm in Alabama.,A state that is located in the southern United States.,U.S States,South
+morning,noun,I wake up early in the morning.,See you tomorrow morning.,I like coffee in the morning.,The early part of the day from the time when people wake up until midday or before lunch.,Calendar,Time of the Day
+afternoon,noun,We went shopping this afternoon.,Come over tomorrow afternoon.,I will see you tomorrow afternoon.,The part of the day from 12 midday until about 6 o?clock.,Calendar,Time of the Day
+Monday,noun,Tomorrow is Monday.,We met last Monday.,Next Monday is a holliday.,The day of the week after Sunday and before Tuesday; the first day of the working week.,Calendar,Day of the Week
+Thursday,noun,I was sick last Thursday.,My uncle is coming on Thursday.,Today is Thursday.,The day of the week after Wednesday and before Friday.,Calendar,Day of the Week
+March,noun,I was born on March.,My school started on March.,March has a length of 31 days.,The 3rd month of the year; between February and April.,Calendar,Month of the Year
+July,noun,Last July was very hot.,July is my favorite month.,I was born on July.,The 7th month of the year; between June and August.,Calendar,Month of the Year
+St. Patrick's Day,noun,There are many festivals on St. Patrick's Day.,St. Patrick's Day is celebrated every year.,We had a holiday for St. Patrick's Day.,A cultural and religious celebration held on the 17th of March by Chrisitans for the national saint of Ireland Saint Patrick.,Calendar,Holidays
+Valentine's Day,noun,I bought choclates on Valentine's Day.,Valentine's Day is associated with love.,Valentine's Day is celebrated every year.,The day of 14th of February; when people give small presents or cards to someone they admire or love.,Calendar,Holidays
+spring,noun,Flowers bloom in spring.,I was born in spring of 2014.,Spring is my favourite season.,The season between winter and summer when plants begin to grow.,Calendar,Seasons
+winter,noun,It can be very cold in the winter.,We spent winters in Canada.,Winters can be snowy.,The coldest season of the year; between fall and spring.,Calendar,Seasons
+bird,noun,A large bird flew over me.,We went to the park to feed the birds.,Birds fill nests.,An animal with feathers and wings usually able to fly.,Animals,Flying
+bat,noun,A bat feeds at night.,Bats like dark places.,Bats usually live in the caves.,A small flying animal with big ears and wings of skin.,Animals,Flying
+fish,noun,I caught a fish.,Fishes live under water.,I lost my Fish.,A creature that lives in water; breathes through gills and uses fins and a tail for swimming.,Animals,Underwater
 dolphin,noun,The dolphin was lost.,The dolphins are intelligent animals.,Dolphins are often friendly towards humans.,A sea animal that looks like a large fish with a pointed mouth.,Animals,Underwater
 cat,noun,My friend bought a cat.,The cat ran away.,My cat is afraid of heights.,A small animal with soft fur that people often keep as a pet.,Animals,Pets
-dog,noun,I took the dog to a walk.,The dog was barking.,My pet is a dog.,"An animal with four legs and a tail, often kept as a pet or trained for work",Animals,Pets
+dog,noun,I took the dog to a walk.,The dog was barking.,My pet is a dog.,An animal with four legs and a tail; often kept as a pet or trained for work,Animals,Pets
 bear,noun,I saw a big bear.,A bear is a wild animal.,I saw a black bear.,A heavy wild animal with thick fur and sharp claws.,Animals,Wilderness
-deer,noun,The deer was running by itself.,Deers are herbivores.,The deer was scared.,"An animal with long legs, that eats grass, leaves, and other plants and can run fast.",Animals,Wilderness
+deer,noun,The deer was running by itself.,Deers are herbivores.,The deer was scared.,An animal with long legs; eats plants and can run fast.,Animals,Wilderness
 chicken,noun,My uncle has a big chicken farm.,The chicken laid eggs.,My friend has two chickens.,A type of bird kept on a farm for its eggs or its meat.,Animals,Farm
 cow,noun,My friend has a cow.,Cows eat grass.,A cow has a long tail.,a large animal kept on farms to produce milk or beef.,Animals,Farm

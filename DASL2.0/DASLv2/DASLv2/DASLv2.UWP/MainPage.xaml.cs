@@ -21,7 +21,7 @@ namespace DASLv2.UWP
         {
             this.InitializeComponent();
 
-            string dbPath = FileAccessHelper.GetLocalFilePath("dbTest3.db3");
+            string dbPath = FileAccessHelper.GetLocalFilePath("dbTest7.db3");
             LoadApplication(new DASLv2.App(dbPath));
         }
     }

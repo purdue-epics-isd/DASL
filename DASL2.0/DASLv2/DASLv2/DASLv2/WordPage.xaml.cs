@@ -29,7 +29,7 @@ namespace DASLv2
             string sign;
             Word word = App.Dictionary.NameToWord(pageWord);
             InitializeComponent();
-            WordPageTitle.Text = word.SubCategory;
+            WordPageTitle.Text = pageName;
             WordPageWord.Text = word.Name;
             WordPageDefinition.Text = word.Definition;
             WordPageSentenceOne.Text = word.Sentence1;

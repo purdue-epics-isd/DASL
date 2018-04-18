@@ -59,13 +59,17 @@ namespace DASLv2
             string file = @".\Data\dictionary.txt";
 
             var reader = new StreamReader(File.OpenRead(file));
-            List< string> row = new List<string>();
+            List<string> row = new List<string>();
 
-            while(!reader.EndOfStream)
+            while (!reader.EndOfStream)
             {
                 var line = reader.ReadLine();
                 row = new List<string>(line.Split(','));
-                AddWord(new Word { Name = row[0].Trim(), Speech = row[1], Sentence1 = row[2], Sentence2 = row[3], Sentence3 = row[4], Definition = row[5], RootCategory = row[6].Trim(), SubCategory = row[7].Trim() });
+                try
+                {
+                    AddWord(new Word { Name = row[0].Trim(), Speech = row[1], Sentence1 = row[2], Sentence2 = row[3], Sentence3 = row[4], Definition = row[5], RootCategory = row[6].Trim(), SubCategory = row[7].Trim() });
+                }
+                catch { }
             }
         }
 

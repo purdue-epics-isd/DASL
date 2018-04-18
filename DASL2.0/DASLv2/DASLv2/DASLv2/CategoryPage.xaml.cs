@@ -118,7 +118,9 @@ namespace DASLv2
             //myAll = PageDataViewModel.All;
             // PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "Images/applethumb.jpg",
             //                     "Display a Label with many properties set"));
-
+            foreach (PageDataViewModel page in PageDataViewModel.All) {
+                //Hello
+            }
             CategoryPageTitle.Text = name;
             //CategoryListView.ItemsSource = items;
             this.isWordPage = isWordPage;
@@ -147,7 +149,7 @@ namespace DASLv2
             if (args.SelectedItem != null)
             {
                 PageDataViewModel pageData = args.SelectedItem as PageDataViewModel;
-                string name = pageData.Text.ToLower().Trim();
+                string name = pageData.Text.Trim();
                 List<string> cats = Category.GetSubCategories(name);
                 int i = cats.Count();
                 List<string> newList;

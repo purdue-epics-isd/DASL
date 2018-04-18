@@ -21,14 +21,17 @@
         <ScrollView>
             <!--<ListView x:Name="CategoryListView" ItemSelected="CategorySelected" />-->
             <ListView ItemsSource="{x:Static local:PageDataViewModel.All}"
-              ItemSelected="OnListViewItemSelected">
+              ItemSelected="OnListViewItemSelected"
+              HorizontalOptions="Center">    
+
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <!--
                         <TextCell Text="{Binding Title}"
                           Detail="{Binding Description}" />-->
                         <ImageCell ImageSource="{Binding Image}"
-                          Text="{Binding Text}" />
+                          Text="{Binding Text}"
+                          />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
