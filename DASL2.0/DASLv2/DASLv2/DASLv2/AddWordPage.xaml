@@ -73,7 +73,7 @@
             <Editor Text="" BackgroundColor="LightGray"/>
 
             <Frame BackgroundColor="Orange" >
-                <Label Text="Senctence One"
+                <Label Text="Sentence One"
                    FontSize="Large"
                    TextColor="Black"
                    HorizontalOptions="Center"/>
@@ -82,7 +82,7 @@
             <Editor Text="" BackgroundColor="LightGray"/>
 
             <Frame BackgroundColor="Orange" >
-                <Label Text="Senctence Two"
+                <Label Text="Sentence Two"
                    FontSize="Large"
                    TextColor="Black"
                    HorizontalOptions="Center"/>
@@ -91,7 +91,7 @@
             <Editor Text="" BackgroundColor="LightGray"/>
 
             <Frame BackgroundColor="Orange" >
-                <Label Text="Senctence Three"
+                <Label Text="Sentence Three"
                    FontSize="Large"
                    TextColor="Black"
                    HorizontalOptions="Center"/>
