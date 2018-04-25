@@ -3,12 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DASLv2"
              x:Class="DASLv2.MainPage">
-    <!--<ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness">
-            <On Platform="iOS" Value="20, 40, 20, 20" />
-            <On Platform="Android, WinPhone, Windows" Value="20" />
-        </OnPlatform>
-    </ContentPage.Padding>-->
     <StackLayout VerticalOptions="FillAndExpand" 
                  HorizontalOptions="FillAndExpand"
                  Orientation="Vertical" 
@@ -19,10 +13,6 @@
                    TextColor="Orange"
                    HorizontalOptions="Center"/>
         </Frame>
-        <!-- <Label Text="ASL Dictionary" 
-               FontSize="Large" 
-               TextColor="DarkOrange" 
-               XAlign="Center"/> -->
         <Button x:Name="categories" 
                 Text="English Category Search" 
                 HeightRequest="60"
@@ -54,5 +44,4 @@
                 Margin = "10"
                 Clicked="OnWOTW"/>
     </StackLayout>
-
 </ContentPage>
