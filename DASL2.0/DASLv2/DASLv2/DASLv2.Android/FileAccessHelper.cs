@@ -14,6 +14,7 @@ namespace DASLv2.Droid
 {
     class FileAccessHelper
     {
+        //This is used to get the file path of the database. It must be done in OS specific development as the way to do it is different for every OS.
         public static string GetLocalFilePath(string filename)
         {
             string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);

@@ -53,7 +53,7 @@ namespace DASLv2
             return new List<Word>();
         }
 
-        //Gets the words from a csv at first launch of app. Maybe we can just have the database filled with information when they download?
+        //Gets the words from a csv at first launch of app and adds them to the local database
         public void InitUpdate()
         {
             string file = @".\Data\dictionary.txt";
@@ -75,9 +75,10 @@ namespace DASLv2
 
         public void UpdateDatabase()
         {
-            //Used to update the databse with the online database
+            //TO DO: Used to update the databse with the online database
         }
 
+        //This finds the location of a word in the database simply using the name if the word.
         public Word NameToWord(string name)
         {
             var words = GetAllWords();

@@ -7,7 +7,7 @@ namespace DASLv2
 {
     public static class Category
     {
-
+        //THis method looks at all of the words in the database and finds the names for all of the root categories. (root categoires are stored as an intrinsic part of a word)
         public static List<string> GetRootCategories()
         {
             List<Word> words = App.Dictionary.GetAllWords();
@@ -33,6 +33,7 @@ namespace DASLv2
             return categories;
         }
 
+        //Same as the GetRootCategories class, except that it does it for all of the sub-categories in a root category
         public static List<string> GetSubCategories(string root)
         {
             List<string> categories;
@@ -67,7 +68,7 @@ namespace DASLv2
             } 
         }
 
-        //sorted alphabetically
+        //This gets all of the words within a root category. It is currently just used in the GetSubCategories method.
         public static List<Word> GetWordsFromRootCategory(string category)
         {
             List<Word> words = App.Dictionary.GetAllWords();
@@ -83,6 +84,7 @@ namespace DASLv2
             return wordsInCat;
         }
 
+        //Given a sub category, this method will return all of the names of the words that fall beneath it.
         public static List<string> GetWordNamesFromCategory(string category)
         {
             var words = App.Dictionary.GetAllWords();
