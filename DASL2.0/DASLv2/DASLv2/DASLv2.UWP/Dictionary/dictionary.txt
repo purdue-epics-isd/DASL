@@ -1,3 +1,0 @@
-Apple,Noun,I have an apple,Food,Fruit
-Winter,Noun,Winter is cold,Weather,Seasons
-Oregano,Noun,Oregano is dank,Food,Spice

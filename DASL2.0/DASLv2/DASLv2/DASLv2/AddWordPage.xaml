@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DASLv2.AddWordPage">
+    <!--<ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20, 40, 20, 20" />
+            <On Platform="Android, UWP" Value="20" />
+        </OnPlatform>
+    </ContentPage.Padding>-->
+    <ScrollView>
+        <StackLayout>
+            <Frame BackgroundColor="Black"
+                   >
+                <Label Text="Add Word"
+                   FontSize="Large"
+                   TextColor="Orange"
+                   HorizontalOptions="Center"/>
+            </Frame>
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Main Category"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+            <Picker x:Name="MainPicker" SelectedIndex="{Binding Theme}" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>Official Purdue</x:String>
+                    <x:String>Emerald Green</x:String>
+                    <x:String>Volcanic Red</x:String>
+                    <x:String>Sky Blue</x:String>
+                </Picker.Items>
+            </Picker>
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Sub Category"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+            <Picker x:Name="SubPicker" SelectedIndex="{Binding Theme}" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                </Picker.Items>
+            </Picker>
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Word"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+            
+            <Editor Text="" BackgroundColor="LightGray"/>
+
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Definition"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+
+            <Editor Text="" BackgroundColor="LightGray"/>
+            
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Part of Speech"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+
+            <Editor Text="" BackgroundColor="LightGray"/>
+
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Sentence One"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+
+            <Editor Text="" BackgroundColor="LightGray"/>
+
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Sentence Two"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+
+            <Editor Text="" BackgroundColor="LightGray"/>
+
+            <Frame BackgroundColor="Orange" >
+                <Label Text="Sentence Three"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            </Frame>
+
+            <Editor Text="" BackgroundColor="LightGray"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
