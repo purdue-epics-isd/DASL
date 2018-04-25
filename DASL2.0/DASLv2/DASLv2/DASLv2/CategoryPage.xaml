@@ -22,15 +22,14 @@
         </Frame>
 
         <ScrollView BackgroundColor="AntiqueWhite">
-            <!--<ListView x:Name="CategoryListView" ItemSelected="CategorySelected" />-->
             <ListView ItemsSource="{x:Static local:PageDataViewModel.All}"
               ItemSelected="OnListViewItemSelected"
               HorizontalOptions="Center">    
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <!--
-                        <TextCell Text="{Binding Title}"
-                          Detail="{Binding Description}" />-->
+                        Image cells contain the template for data to display in each element of a category/word list
+                        -->
                         <ImageCell  ImageSource="{Binding Image}"
                                     Text="{Binding Text}"
                         />

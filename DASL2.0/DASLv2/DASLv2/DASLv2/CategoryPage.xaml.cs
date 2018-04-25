@@ -31,51 +31,13 @@ namespace DASLv2
         static PageDataViewModel()
         {
             All = new List<PageDataViewModel>
-        {
-            new PageDataViewModel(typeof(CategoryPage), "Images/circlethumb.jpg",
-            //new PageDataViewModel(typeof(WordPage), "Images/appleThumb.jpg",
-                                  "Interact with a Slider and Button"),
-
-/*
-            // Part 2. Essential XAML Syntax
-            new PageDataViewModel(typeof(GridDemoPage), "Grid Demo",
-                                  "Explore XAML syntax with the Grid"),
-            new PageDataViewModel(typeof(AbsoluteDemoPage), "Absolute Demo",
-                                  "Explore XAML syntax with AbsoluteLayout"),
-
-            // Part 3. XAML Markup Extensions
-            new PageDataViewModel(typeof(SharedResourcesPage), "Shared Resources",
-                                  "Using resource dictionaries to share resources"),
-
-            new PageDataViewModel(typeof(StaticConstantsPage), "Static Constants",
-                                  "Using the x:Static markup extensions"),
-
-            new PageDataViewModel(typeof(RelativeLayoutPage), "Relative Layout",
-                                  "Explore XAML markup extensions"),
-
-            // Part 4. Data Binding Basics
-            new PageDataViewModel(typeof(SliderBindingsPage), "Slider Bindings",
-                                  "Bind properties of two views on the page"),
-
-            new PageDataViewModel(typeof(SliderTransformsPage), "Slider Transforms",
-                                  "Use Sliders with reverse bindings"),
-
-            new PageDataViewModel(typeof(ListViewDemoPage), "ListView Demo",
-                                  "Use a ListView with data bindings"),
-
-            // Part 5. From Data Bindings to MVVM
-            new PageDataViewModel(typeof(OneShotDateTimePage), "One-Shot DateTime",
-                                  "Obtain the current DateTime and display it"),
-
-            new PageDataViewModel(typeof(ClockPage), "Clock",
-                                  "Dynamically display the current time"),
-
-            new PageDataViewModel(typeof(HslColorScrollPage), "HSL Color Scroll",
-                                  "Use a view model to select HSL colors"),
-
-            new PageDataViewModel(typeof(KeypadPage), "Keypad",
-                                  "Use a view model for numeric keypad logic")
-  */      };
+            {
+                /*
+                example of how to add a new page to the PageDataViewModel list
+                new PageDataViewModel(typeof(CategoryPage), "Images/circlethumb.jpg",
+                    "Interact with a Slider and Button"),
+                */
+            };
         }
 
 
@@ -84,9 +46,8 @@ namespace DASLv2
 
     public partial class CategoryPage : ContentPage
     {
-        //public static int i = 0; //Change to non static once backend is done.
         public bool isWordPage = false;
-        public IList<PageDataViewModel> myAll;
+        public IList<PageDataViewModel> myAll; //list of all elements to be displayed
         public CategoryPage()
         {
             InitializeComponent();
@@ -97,25 +58,29 @@ namespace DASLv2
 
             // Part 1. Getting Started with XAML
             int i = 0;
-            PageDataViewModel.All.Clear();
-            myAll = new List<PageDataViewModel>();
-            items.Sort();
+            PageDataViewModel.All.Clear(); //clear the current list of viewmodels
+            myAll = new List<PageDataViewModel>(); //load myall with a fresh empty list
+            items.Sort();   //sort the Categories/words alpabetically
             if (!isWordPage)
             {
-                foreach (string str in items)
+                //Category page section
+                foreach (string str in items) //for each category:
                 {
-                    if (i++ == 0)
-                    {
+                    if (i++ == 0) //used to make sure the first item is skipped (work-around for UWP bug)
+                    { // (a dummy page)
                         PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "_", "\t"));
-                        myAll.Add(new PageDataViewModel(typeof(CategoryPage), "_","\t"));
+                        myAll.Add(new PageDataViewModel(typeof(CategoryPage), "_", "\t"));
                         continue;
-                    }
-                    PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim().Replace(" ", "").Replace(@"'","").Replace("?","") + "thumb.jpg", str));
+                    } 
+                    //adds a new element to the list view
+                    PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim().Replace(" ", "").Replace(@"'", "").Replace("?", "") + "thumb.jpg", str));
+                    //also adds it to the local copy of the list, this is needed for reloading the page
                     myAll.Add(new PageDataViewModel(typeof(CategoryPage), "Images/" + str.ToLower().Trim().Replace(" ", "").Replace(@"'", "").Replace("?", "") + "thumb.jpg", str));
                 }
             }
             else
             {
+                //Same as category page except it loads a Word Page instead
                 foreach (string str in items)
                 {
                     if (i++ == 0)
@@ -128,25 +93,14 @@ namespace DASLv2
                     myAll.Add(new PageDataViewModel(typeof(WordPage), "Images/" + str.ToLower().Trim().Replace(" ", "").Replace(@"'", "").Replace("?", "") + "thumb.jpg", str));
                 }
             }
-            //myAll = PageDataViewModel.All;
-            // PageDataViewModel.All.Add(new PageDataViewModel(typeof(CategoryPage), "Images/applethumb.jpg",
-            //                     "Display a Label with many properties set"));
-            foreach (PageDataViewModel page in PageDataViewModel.All) {
-                //Hello
-            }
-            CategoryPageTitle.Text = name;
-            //CategoryListView.ItemsSource = items;
-            this.isWordPage = isWordPage;
-            //i++;
-        }
 
-        /*void CategoryTapped(object sender, ItemTappedEventArgs e)
-        {
-            DisplayAlert("Item Tapped", e.Item.ToString(), "Ok");
-        }*/
+            CategoryPageTitle.Text = name;
+            this.isWordPage = isWordPage;
+        }
 
         protected override void OnAppearing()
         {
+            //whenever the page is reopened, reload all of the list elements back into it from this.myAll
             base.OnAppearing();
             PageDataViewModel.All.Clear();
             foreach (var item in this.myAll)
@@ -155,10 +109,11 @@ namespace DASLv2
             }
         }
 
+        //triggers whenever a category/word is clicked on
         private async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
             (sender as ListView).SelectedItem = null;
-
+             
             if (args.SelectedItem != null)
             {
                 PageDataViewModel pageData = args.SelectedItem as PageDataViewModel;
@@ -180,26 +135,21 @@ namespace DASLv2
                 {
                     page = (Page)Activator.CreateInstance(pageData.Type, CategoryPageTitle.Text, name);
                     await Navigation.PushAsync(page);
-                    //await Navigation.PushAsync(new WordPage(name, "This Worked"));
                 }
                 else if (i == 0)
                 {
                     page = (Page)Activator.CreateInstance(pageData.Type, name, newList, true);
                     await Navigation.PushAsync(page);
-                    //await Navigation.PushAsync(new CategoryPage(name, newList, true));
                 }
                 else
                 {
                     page = (Page)Activator.CreateInstance(pageData.Type, name, newList, false);
                     await Navigation.PushAsync(page);
-                    //await Navigation.PushAsync(new CategoryPage(name, newList, false));
                 }
                 //
                 //comment out if you want to keep selections
                 ListView lst = (ListView)sender;
                 lst.SelectedItem = null;
-                //page = (Page)Activator.CreateInstance(pageData.Type);
-                //await Navigation.PushAsync(page);
             }
         }
 
@@ -244,19 +194,5 @@ namespace DASLv2
             ListView lst = (ListView)sender;
             lst.SelectedItem = null;
         }
-        /*
-        void CategoryRefresh(object sender, EventArgs e)
-        {
-            var list = (ListView)sender;
-            //put your refreshing logic here
-            var itemList = CategoryItems.Reverse().ToList();
-            CategoryItems.Clear();
-            foreach (var s in itemList)
-            {
-                CategoryItems.Add(s);
-            }
-            //make sure to end the refresh state
-            list.IsRefreshing = false;
-        }*/
     }
 }
