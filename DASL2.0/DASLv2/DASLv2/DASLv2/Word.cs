@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 using SQLite;
 
+//This is the word class. The database structures itself based around this class.
 namespace DASLv2
 {
     [Table("word")]
     public class Word
     {
+        //Names are set to unique so that you do not add two instances of the same word
         [Column("name"),Unique]
         public string Name { get; set; }
 
