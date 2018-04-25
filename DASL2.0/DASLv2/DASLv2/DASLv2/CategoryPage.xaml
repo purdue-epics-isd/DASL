@@ -20,7 +20,10 @@
             HorizontalOptions="CenterAndExpand" >
             </Label>
         </Frame>
-
+        <!--
+        How to use MVVM in Xaml
+        https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/xaml-basics/data-bindings-to-mvvm        
+        -->
         <ScrollView BackgroundColor="AntiqueWhite">
             <ListView ItemsSource="{x:Static local:PageDataViewModel.All}"
               ItemSelected="OnListViewItemSelected"
