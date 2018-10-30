@@ -51,11 +51,12 @@ namespace DASLv2
         public CategoryPage()
         {
             InitializeComponent();
+            //BindingContext = new ThemeViewModel();
         }
         public CategoryPage(string name, List<string> items, bool isWordPage)
         {
             InitializeComponent();
-
+            BindingContext = new ThemeViewModel();
             // Part 1. Getting Started with XAML
             int i = 0;
             PageDataViewModel.All.Clear(); //clear the current list of viewmodels

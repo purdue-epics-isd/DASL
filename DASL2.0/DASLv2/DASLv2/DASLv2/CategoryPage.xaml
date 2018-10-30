@@ -10,12 +10,12 @@
         </OnPlatform>
     </ContentPage.Padding>
     <StackLayout>
-        <Frame BackgroundColor="Black">
+        <Frame BackgroundColor="{Binding AltColor}">
             <Label Text="{Binding}"
             x:Name="CategoryPageTitle"
             VerticalOptions="Center"
             FontSize="Large" 
-            TextColor="Orange" 
+            TextColor="{Binding MainColor}" 
             XAlign="Center"
             HorizontalOptions="CenterAndExpand" >
             </Label>
@@ -24,7 +24,7 @@
         How to use MVVM in Xaml
         https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/xaml-basics/data-bindings-to-mvvm        
         -->
-        <ScrollView BackgroundColor="AntiqueWhite">
+        <ScrollView BackgroundColor="{Binding BgColor}">
             <ListView ItemsSource="{x:Static local:PageDataViewModel.All}"
               ItemSelected="OnListViewItemSelected"
               HorizontalOptions="Center">    

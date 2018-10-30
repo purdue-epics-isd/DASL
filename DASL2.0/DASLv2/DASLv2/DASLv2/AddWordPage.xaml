@@ -4,34 +4,34 @@
              x:Class="DASLv2.AddWordPage">
     <ScrollView>
         <StackLayout>
-            <Frame BackgroundColor="Black"
+            <Frame BackgroundColor="{Binding AltColor}"
                    >
                 <Label Text="Add Word"
                    FontSize="Large"
-                   TextColor="Orange"
+                   TextColor="{Binding MainColor}"
                    HorizontalOptions="Center"/>
             </Frame>
-            <Frame BackgroundColor="Orange" >
+            <Frame BackgroundColor="{Binding MainColor}" >
                 <Label Text="Main Category"
                    FontSize="Large"
-                   TextColor="Black"
+                   TextColor="{Binding AltColor}"
                    HorizontalOptions="Center"/>
             </Frame>
-            <Picker x:Name="MainPicker" SelectedIndex="{Binding Theme}" HorizontalOptions="FillAndExpand">
+            <Picker x:Name="MainPicker" SelectedIndex="0" HorizontalOptions="FillAndExpand">
                 <Picker.Items>
-                    <x:String>Official Purdue</x:String>
-                    <x:String>Emerald Green</x:String>
-                    <x:String>Volcanic Red</x:String>
-                    <x:String>Sky Blue</x:String>
+                    <x:String>Location</x:String>
+                    <x:String>Food</x:String>
+                    <x:String>Tools</x:String>
+                    <x:String>Color</x:String>
                 </Picker.Items>
             </Picker>
-            <Frame BackgroundColor="Orange" >
+            <Frame BackgroundColor="{Binding MainColor}" >
                 <Label Text="Sub Category"
                    FontSize="Large"
-                   TextColor="Black"
+                   TextColor="{Binding AltColor}"
                    HorizontalOptions="Center"/>
             </Frame>
-            <Picker x:Name="SubPicker" SelectedIndex="{Binding Theme}" HorizontalOptions="FillAndExpand">
+            <Picker x:Name="SubPicker" SelectedIndex="0" HorizontalOptions="FillAndExpand">
                 <Picker.Items>
                     <x:String>1</x:String>
                     <x:String>2</x:String>
@@ -39,55 +39,55 @@
                     <x:String>4</x:String>
                 </Picker.Items>
             </Picker>
-            <Frame BackgroundColor="Orange" >
+            <Frame BackgroundColor="{Binding MainColor}" >
                 <Label Text="Word"
                    FontSize="Large"
-                   TextColor="Black"
+                   TextColor="{Binding AltColor}"
                    HorizontalOptions="Center"/>
             </Frame>
             
             <Editor Text="" BackgroundColor="LightGray"/>
 
-            <Frame BackgroundColor="Orange" >
+            <Frame BackgroundColor="{Binding MainColor}" >
                 <Label Text="Definition"
                    FontSize="Large"
-                   TextColor="Black"
+                   TextColor="{Binding AltColor}"
                    HorizontalOptions="Center"/>
             </Frame>
 
             <Editor Text="" BackgroundColor="LightGray"/>
-            
-            <Frame BackgroundColor="Orange" >
+
+            <Frame BackgroundColor="{Binding MainColor}" >
                 <Label Text="Part of Speech"
                    FontSize="Large"
-                   TextColor="Black"
+                   TextColor="{Binding AltColor}"
                    HorizontalOptions="Center"/>
             </Frame>
 
             <Editor Text="" BackgroundColor="LightGray"/>
 
-            <Frame BackgroundColor="Orange" >
+            <Frame BackgroundColor="{Binding MainColor}" >
                 <Label Text="Senctence One"
                    FontSize="Large"
-                   TextColor="Black"
+                   TextColor="{Binding AltColor}"
                    HorizontalOptions="Center"/>
             </Frame>
 
             <Editor Text="" BackgroundColor="LightGray"/>
 
-            <Frame BackgroundColor="Orange" >
+            <Frame BackgroundColor="{Binding MainColor}" >
                 <Label Text="Senctence Two"
                    FontSize="Large"
-                   TextColor="Black"
+                   TextColor="{Binding AltColor}"
                    HorizontalOptions="Center"/>
             </Frame>
 
             <Editor Text="" BackgroundColor="LightGray"/>
 
-            <Frame BackgroundColor="Orange" >
+            <Frame BackgroundColor="{Binding MainColor}" >
                 <Label Text="Senctence Three"
                    FontSize="Large"
-                   TextColor="Black"
+                   TextColor="{Binding AltColor}"
                    HorizontalOptions="Center"/>
             </Frame>
 
