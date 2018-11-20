@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Runtime.CompilerServices;
-using System.ComponentModel;
-using System.Configuration;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -23,23 +20,6 @@ namespace DASLv2
 		public SettingsPage ()
 		{
 			InitializeComponent ();
-           // BindingContext = new ThemeViewModel();
-            //ThemePicker.SelectedIndex = Theme.CurrentTheme;
-        }
-
-
-        //change theme
-        /*void onThemeChosen(Object sender, EventArgs args)
-        {
-            Theme.CurrentTheme = ThemePicker.SelectedIndex;            
-            profileFrame.BackgroundColor = 
-            nameLabel.TextColor = 
-            themeLabel.TextColor = 
-            readingLabel.TextColor = 
-            Xamarin.Forms.Color.FromHex(Theme.currentTheme.altColor);
-            profileLabel.TextColor = Xamarin.Forms.Color.FromHex(Theme.currentTheme.mainColor);
-            
-        }
-        */
+		}
 	}
 }

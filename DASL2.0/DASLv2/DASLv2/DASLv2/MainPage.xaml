@@ -7,10 +7,10 @@
                  HorizontalOptions="FillAndExpand"
                  Orientation="Vertical" 
                  Spacing="15">
-        <Frame BackgroundColor="{Binding AltColor}" >
+        <Frame BackgroundColor="Black" >
             <Label Text="ASL Dictionary"
                    FontSize="Large"
-                   TextColor="{Binding MainColor}"
+                   TextColor="Orange"
                    HorizontalOptions="Center"/>
         </Frame>
         <Button x:Name="categories" 
@@ -18,8 +18,8 @@
                 HeightRequest="60"
                 WidthRequest = "90" 
                 CornerRadius="10"
-                BackgroundColor="{Binding MainColor}"
-                BorderColor= "{Binding AltColor}" 
+                BackgroundColor="Orange"
+                BorderColor= "Black" 
                 FontSize = "Large" 
                 Margin = "10"
                 Clicked="OnEnglishSearch"/>
@@ -28,8 +28,8 @@
                 HeightRequest="60"
                 WidthRequest = "90" 
                 CornerRadius="10"
-                BackgroundColor="{Binding MainColor}"
-                BorderColor = "{Binding AltColor}" 
+                BackgroundColor="Orange"
+                BorderColor = "Black" 
                 FontSize = "Large" 
                 Margin = "10"
                 Clicked="OnWOTD" />
@@ -38,8 +38,8 @@
                 HeightRequest="60"
                 WidthRequest = "90" 
                 CornerRadius="10"
-                BackgroundColor="{Binding MainColor}"
-                BorderColor = "{Binding AltColor}" 
+                BackgroundColor="Orange"
+                BorderColor = "Black" 
                 FontSize = "Large" 
                 Margin = "10"
                 Clicked="OnWOTW"/>

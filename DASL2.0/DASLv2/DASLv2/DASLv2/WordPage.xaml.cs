@@ -17,7 +17,6 @@ namespace DASLv2
 		public WordPage () 
 		{
             InitializeComponent ();
-            BindingContext = new ThemeViewModel();
 		}
 
         //Main Constructor Used
@@ -26,7 +25,6 @@ namespace DASLv2
             string sign;
             Word word = App.Dictionary.NameToWord(pageWord);    // grabs the word from the database (necessary becaues if it is lower case, the pageWord passed in won't be lower case but it's important for common nouns to be lower case
             InitializeComponent();                              // Links the Xaml to the C#
-            BindingContext = new ThemeViewModel();
             WordPageTitle.Text = pageName;                      // Sets the specified text box with the entry from the database
             WordPageWord.Text = word.Name;                      // Sets the specified text box with the entry from the database
             WordPageDefinition.Text = word.Definition;          // Sets the specified text box with the entry from the database
