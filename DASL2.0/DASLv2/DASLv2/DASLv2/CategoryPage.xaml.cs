@@ -37,6 +37,8 @@ namespace DASLv2
                 new PageDataViewModel(typeof(CategoryPage), "Images/circlethumb.jpg",
                     "Interact with a Slider and Button"),
                 */
+                           new PageDataViewModel(typeof(CategoryPage), "Images/circlethumb.jpg",
+                    "Interact with a Slider and Button"),
             };
         }
 
@@ -50,7 +52,7 @@ namespace DASLv2
         public IList<PageDataViewModel> myAll; //list of all elements to be displayed
         public CategoryPage()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
         public CategoryPage(string name, List<string> items, bool isWordPage)
         {
@@ -102,6 +104,10 @@ namespace DASLv2
         {
             //whenever the page is reopened, reload all of the list elements back into it from this.myAll
             base.OnAppearing();
+            if (listView != null)
+            {
+                listView.ClearValue(ListView.SelectedItemProperty);
+            }
             PageDataViewModel.All.Clear();
             foreach (var item in this.myAll)
             {
@@ -113,7 +119,7 @@ namespace DASLv2
         private async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
             (sender as ListView).SelectedItem = null;
-             
+            
             if (args.SelectedItem != null)
             {
                 PageDataViewModel pageData = args.SelectedItem as PageDataViewModel;
@@ -148,6 +154,7 @@ namespace DASLv2
                 }
                 //
                 //comment out if you want to keep selections
+                page.BindingContext = this.BindingContext;
                 ListView lst = (ListView)sender;
                 lst.SelectedItem = null;
             }

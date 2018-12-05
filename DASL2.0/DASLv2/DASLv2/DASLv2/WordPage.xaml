@@ -8,81 +8,81 @@
                  Orientation="Vertical" 
                  Spacing="15">
 
-            <Frame BackgroundColor="Black">
+            <Frame BackgroundColor="{Binding AltColor}">
                 <Label  Text="{Binding}" 
                         x:Name="WordPageTitle"
                         FontSize="Large" 
-                        TextColor="Orange" 
+                        TextColor="{Binding MainColor}" 
                         XAlign="Center"
                         HorizontalOptions="CenterAndExpand" />
             </Frame>
-            <Frame BackgroundColor="Orange">
+            <Frame BackgroundColor="{Binding MainColor}">
                 <Label  Text="{Binding}"
                         x:Name="WordPageWord"
                         HorizontalOptions="CenterAndExpand"
                         FontSize="Large"
-                        TextColor="Black"/>
+                        TextColor="{Binding AltColor}"/>
             </Frame>
 
             <Image x:Name="WordPageImage"
                    Source="{Binding}" />
 
-            <Frame BackgroundColor="Orange">
+            <Frame BackgroundColor="{Binding MainColor}">
                 <Label  Text="{Binding}"
                         x:Name="WordPageSign"
                         HorizontalOptions="CenterAndExpand"
                         FontSize="Large"
-                        TextColor="Black"/>
+                        TextColor="{Binding AltColor}"/>
             </Frame>
             <Image x:Name="WordPageGif"
                    Source="{Binding}" />
 
-            <Frame BackgroundColor="Orange">
+            <Frame BackgroundColor="{Binding MainColor}">
                 <Label  Text="Definition"
                         FontSize="Large" 
-                        TextColor="Black" 
+                        TextColor="{Binding AltColor}" 
                         XAlign="Center"/>
             </Frame>
-            <Frame BackgroundColor="LightGray">
+            <Frame BackgroundColor="{Binding BgColor}">
                 <Label Text="{Binding}" 
                     x:Name="WordPageDefinition"
                     FontSize="Medium"
                     HorizontalOptions="CenterAndExpand" />
             </Frame>
 
-            <Frame BackgroundColor="Orange">
+            <Frame BackgroundColor="{Binding MainColor}">
                 <Label  Text="Part of Speech"
                         FontSize="Large" 
-                        TextColor="Black" 
+                        TextColor="{Binding AltColor}" 
                         XAlign="Center"/>
             </Frame>
-            <Frame BackgroundColor="LightGray">
+            <Frame BackgroundColor="{Binding BgColor}">
                 <Label Text="{Binding}" 
                     x:Name="WordPagePartOfSpeech"
                     FontSize="Medium"
                     HorizontalOptions="CenterAndExpand" />
             </Frame>
 
-            <Frame BackgroundColor="Orange">
+            <Frame BackgroundColor="{Binding MainColor}">
 
                 <Label  Text="Example Sentences"
                         FontSize="Large" 
-                        TextColor="Black" 
+                        TextColor="{Binding AltColor}" 
                         XAlign="Center"/>
             </Frame>
-            <Frame BackgroundColor="LightGray">
+            <Frame BackgroundColor="{Binding BgColor}">
                 <Label  Text="{Binding}" 
                         x:Name="WordPageSentenceOne"
                         FontSize="Medium"
                         HorizontalOptions="CenterAndExpand" />
             </Frame>
-            <Frame BackgroundColor="LightGray">
+            <Frame BackgroundColor="{Binding BgColor}">
                 <Label  Text="{Binding}" 
                         x:Name="WordPageSentenceTwo"
                         FontSize="Medium"
                         HorizontalOptions="CenterAndExpand" />
             </Frame>
-            <Frame BackgroundColor="LightGray">
+            <Frame BackgroundColor="{Binding BgColor}">
                 <Label  Text="{Binding}" 
                         x:Name="WordPageSentenceThree"
                         FontSize="Medium"

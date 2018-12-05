@@ -1,44 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DASLv2.SettingsPage">
+             x:Class="DASLv2.SettingsPage"
+             xmlns:local="clr-namespace:DASLv2">
     <ScrollView>
         <StackLayout>
-            <Frame BackgroundColor="Black" >
-                <Label Text="Profile"
+            <Frame x:Name="profileFrame" BackgroundColor="{Binding AltColor}" >
+                <Label Text="Profile" 
+                       x:Name="profileLabel"
                    FontSize="Large"
-                   TextColor="Orange"
+                   TextColor="{Binding MainColor}"
                    HorizontalOptions="Center"/>
             </Frame>
-            <Frame BackgroundColor="Orange" >
-                <Label Text="Caleb Withers"
+            <Frame x:Name="nameFrame" BackgroundColor="{Binding MainColor}" >
+                <Label x:Name="nameLabel"
+                   Text="Caleb Withers"
                    FontSize="Large"
-                   TextColor="Black"
+                   TextColor="{Binding AltColor}"
                    HorizontalOptions="Center"/>
             </Frame>
-            <Image x:Name="WordPageImage"
-                Source="Images/profilepicture.jpg" />
-            <Frame BackgroundColor="Orange" >
-                <Label Text="Theme"
+            <!-- Source="Images/profilepicture.jpg"-->
+            <StackLayout Orientation="Horizontal"
+                         HeightRequest="200">
+                <Image x:Name="WordPageImage"
+                       Aspect="AspectFit"
+                       HorizontalOptions="CenterAndExpand"
+                       Source="{Binding ImgPath}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                <Button Text="Upload" 
+                        Clicked="onImageUpload"
+                        VerticalOptions="Center"
+                        />
+                <Button Text="Reset" 
+                        Clicked="onImageReset"
+                        VerticalOptions="Center"
+                        />
+            </StackLayout>
+            <Frame x:Name="themeFrame" BackgroundColor="{Binding MainColor}" >
+                <Label x:Name="themeLabel"
+                   Text="Theme"
                    FontSize="Large"
-                   TextColor="Black"
+                   TextColor="{Binding AltColor}"
                    HorizontalOptions="Center"/>
             </Frame>
-            <Picker x:Name="ThemePicker" SelectedIndex="{Binding Theme}" HorizontalOptions="FillAndExpand">
-                <Picker.Items>
-                    <x:String>Official Purdue</x:String>
-                    <x:String>Emerald Green</x:String>
-                    <x:String>Volcanic Red</x:String>
-                    <x:String>Sky Blue</x:String>
-                </Picker.Items>
+            <Picker x:Name="ThemePicker"
+                    HorizontalOptions="FillAndExpand"
+                    SelectedIndex="{Binding ThemeNum}"
+                        Margin="0, 0, 10, 0">
+                    <Picker.Items>
+                        <x:String>Oriole Orange</x:String>
+                        <x:String>Emerald Green</x:String>
+                        <x:String>Fiery Red</x:String>
+                        <x:String>Aquatic Blue</x:String>
+                        <x:String>Pearl White</x:String>
+                    </Picker.Items>
             </Picker>
-            <Frame BackgroundColor="Orange" >
-                <Label Text="Reading Level"
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Low Vision"
+                       VerticalOptions="Center"
+                       Grid.Row="0"
+                       Grid.Column="0"/>
+                <Switch x:Name="isLowVision"
+                        VerticalOptions="Center"
+                        Grid.Row="0"
+                        Grid.Column="2"/>
+            </Grid>
+            <Frame  x:Name="readingFrame" 
+                BackgroundColor="{Binding MainColor}" >
+                <Label  x:Name="readingLabel"
+                   Text="Reading Level"
                    FontSize="Large"
-                   TextColor="Black"
+                   TextColor="{Binding AltColor}"
                    HorizontalOptions="Center"/>
             </Frame>
-            <Picker x:Name="ReadingPicker" SelectedIndex="{Binding Theme}" HorizontalOptions="FillAndExpand">
+            <Picker x:Name="ReadingPicker" SelectedIndex="0" HorizontalOptions="FillAndExpand">
                 <Picker.Items>
                     <x:String>1</x:String>
                     <x:String>2</x:String>
